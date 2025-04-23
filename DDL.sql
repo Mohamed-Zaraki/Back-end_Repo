@@ -5,6 +5,10 @@ Mot_de_passe VARCHAR(20) NOT NULL ,
 Email VARCHAR(40) ,
 PRIMARY KEY (id_utilisateur));
 
+ALTER TABLE Utilisateur
+ADD CONSTRAINT unique_nom_utilisateur UNIQUE (Nom_utilisateur);
+
+
 CREATE TABLE IF NOT EXISTS Emploi_du_temps(id_emploi INTEGER auto_increment,
 jour ENUM('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche') NOT NULL,
 Heure_Debut TIME NOT NULL ,
