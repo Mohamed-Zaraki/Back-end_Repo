@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CaracteristiquesSalle" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontp.CaracteristiquesSalleController">
+   <children>
+      <Hyperlink fx:id="minus" layoutX="250" layoutY="-30" onAction="#closewindow">
+         <graphic>
+            <SVGPath fx:id="minusicon" content="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" layoutX="260.0" layoutY="-240.0" scaleX="0.03" scaleY="0.03" stroke="#012A4A" strokeWidth="25">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </SVGPath>
+         </graphic>
+
+      </Hyperlink>
+
+
+      <Label fx:id="TitleA" layoutX="200.0" layoutY="34.0" text="SALLE --" />
+      <VBox layoutX="34.0" layoutY="80.0" prefHeight="475.0" prefWidth="250.0" spacing="10">
+         <children>
+            <VBox prefHeight="53.0" prefWidth="200.0">
+               <children>
+                  <Hyperlink fx:id="Caracteristiquetitle" maxWidth="230" minWidth="230" onAction="#openEquipement" text="Caracteristiques :" />
+               </children>
+            </VBox>
+            <VBox fx:id="capacitegrp" prefHeight="63.0" prefWidth="100.0" spacing="6">
+               <children>
+                  <Text fx:id="Capacitetitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacite :" />
+                  <HBox layoutX="10.0" layoutY="26.0" prefHeight="24.0" prefWidth="163.0">
+                     <children>
+                        <Text fx:id="Nbrtotal" strokeType="OUTSIDE" strokeWidth="0.0" text="• Capacite totale:" />
+                        <Label fx:id="total" text="--" />
+                     </children>
+                  </HBox>
+
+                  <HBox prefHeight="24.0" prefWidth="163.0">
+                     <children>
+                        <Text fx:id="Nbrposts" strokeType="OUTSIDE" strokeWidth="0.0" text="• Nombre de posts :" />
+                        <Label fx:id="posts" text="--" />
+                     </children>
+                  </HBox>
+
+                  <HBox layoutX="10.0" layoutY="26.0" prefHeight="24.0" prefWidth="163.0">
+                     <children>
+                        <Text fx:id="Nbrtables" strokeType="OUTSIDE" strokeWidth="0.0" text="• Nombre de tables :" />
+                        <Label fx:id="tables" text="--" />
+                     </children>
+                  </HBox>
+
+
+
+
+               </children>
+            </VBox>
+            <VBox fx:id="occupegrp" layoutX="10.0" layoutY="90.0" prefHeight="136.0" prefWidth="163.0" spacing="3">
+               <children>
+                  <Text fx:id="OccupePartitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Occupe par :" />
+                  <HBox prefHeight="24.0" prefWidth="163.0">
+                     <children>
+                        <Text fx:id="Grp" strokeType="OUTSIDE" strokeWidth="0.0" text="• Groupe :" />
+                        <Label fx:id="groupe" text="--" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="26.0" prefHeight="24.0" prefWidth="163.0">
+                     <children>
+                        <Text fx:id="Prof" strokeType="OUTSIDE" strokeWidth="0.0" text="• Professeur :" />
+                        <Label fx:id="professeur" text="--" />
+                     </children>
+                  </HBox>
+
+                  <HBox layoutX="10.0" layoutY="73.0" prefHeight="26.0" prefWidth="163.0">
+                     <children>
+                        <Text fx:id="Mod" strokeType="OUTSIDE" strokeWidth="0.0" text="• Module :" />
+                        <Label fx:id="module" text="--" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+
+
+            <VBox fx:id="logicielsgrp" layoutX="10.0" layoutY="40.0" prefHeight="63.0" prefWidth="100.0" spacing="3">
+               <children>
+                  <Text fx:id="logicielstitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Logiciels :" />
+
+
+                  <HBox fx:id="matlabGrp">
+                     <Button fx:id="matlabbutton" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="matlab" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 16;" text="MATLAB" />
+                  </HBox>
+
+
+                  <HBox fx:id="javaGrp">
+
+                     <Button fx:id="javaJdkbutton" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="javajdk" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 16;" text="JAVA JDK" />
+                  </HBox>
+
+
+                  <HBox fx:id="devcGrp">
+                     <Button fx:id="devcbutton" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="devc" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 16;" text="DEV C++" />
+                  </HBox>
+
+                  <HBox fx:id="logiciel4Grp">
+                     <Button fx:id="logiciel4button" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="logiciel4" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 16;" text="CISCO PACKET TRACER" />
+                  </HBox>
+
+
+                  <HBox fx:id="logiciel5Grp">
+                     <Button fx:id="logiciel5button" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="logiciel5" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 16;" text="POSTGRES" />
+                  </HBox>
+
+
+                  <HBox fx:id="logiciel6Grp">
+                     <Button fx:id="logiciel6button" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="logiciel6" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 40; -fx-translate-y: -5" text="MYSQL" />
+                  </HBox>
+
+
+                  <HBox fx:id="logiciel7Grp">
+                     <Button fx:id="logiciel7button" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="logiciel7" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 40; -fx-translate-y: -5" text="QTSPIM" />
+                  </HBox>
+
+
+                  <HBox fx:id="logiciel8Grp">
+                     <Button fx:id="logiciel8button" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="logiciel8" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 40; -fx-translate-y: -5" text="WIRESHARK" />
+
+                  </HBox>
+
+
+                  <HBox fx:id="logiciel9Grp">
+                     <Button fx:id="logiciel9button" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="logiciel9" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 40; -fx-translate-y: -5" text="LEX" />
+
+                  </HBox>
+
+                  <HBox fx:id="logiciel10Grp">
+                     <Button fx:id="logiciel10button" maxHeight="5" maxWidth="5" minHeight="5" minWidth="5" mnemonicParsing="false" onAction="#ChoisirlogicielButton" />
+                     <TextField id="textfield" fx:id="logiciel10" style="-fx-background-color: transparent;-fx-border-width: 0;-fx-font-family: 'Montserrat Bold';-fx-text-fill: derive(#134A75,0%);-fx-font-size: 14;-fx-translate-x: 40; -fx-translate-y: -5" text="ECLIPSE" />
+
+                  </HBox>
+
+
+               </children>
+            </VBox>
+
+
+         </children>
+      </VBox>
+      <Hyperlink fx:id="Reservepartitle" layoutY="45" maxWidth="250" minWidth="250" onAction="#openReservePar" prefHeight="8.0" prefWidth="250.0" text="Reservee par :" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,2324 @@
+
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('../Fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url('../Fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../Fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family:'Kanit Medium';
+    src:url('../Fonts/Kanit-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../Fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../Fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('../Fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    src: url('../Fonts/Poppins-Light.ttf');
+}
+
+.root {
+    -fx-my-main-colr:#2C7DA0;
+    -fx-my-main-colr:#012A4A;
+    -fx-my-main-color:#EBF2FA;
+}
+
+.root.Dark-mode{
+    -fx-my-main-colr:#2C7DA0;
+    -fx-my-main-colr:#012A4A;
+    -fx-my-main-color:#EBF2FA;
+    -fx-background-color: #012A4A;
+}
+
+
+
+/*start Login*/
+
+#Login{
+    -fx-background-color: #012A4A;
+}
+
+
+#systembox{
+    -fx-background-color: #C3CED3;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 5, 5);
+}
+
+#bienvenutext{
+    -fx-font-size: 26px;
+    -fx-font-family: 'Montserrat Regular';
+    -fx-fill: #012A4A;
+
+
+}
+
+#copyrighttext{
+    -fx-font-size: 13px;
+    -fx-font-family: 'Montserrat Regular';
+
+    -fx-fill: #012A4A;
+
+
+}
+
+
+#systemetext{
+    -fx-font-size: 55px;
+    -fx-font-family: 'Montserrat Black';
+    -fx-fill: derive(#012A4A,0%);
+    -fx-translate-x: 90px;
+
+}
+
+
+#Loginbox{
+
+    -fx-background-color: #134A75;
+    -fx-background-radius: 15px;
+    /*-fx-translate-y:-30px;*/
+    -fx-translate-x:-150px;
+}
+
+#lineone{
+    -fx-fill:#FFFFFF;
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins Bold';
+}
+
+#loginbox #lineone:hover{
+    -fx-fill: #2C7DA0;
+}
+
+#username,#password{
+
+    -fx-background-radius:10px;
+    -fx-background-color: #012A4A;
+    -fx-font-size:15px;
+    -fx-translate-y:5px;
+    -fx-prompt-text-fill:white;
+    -fx-text-fill: white;
+
+}
+
+
+#connecterbutton{
+    -fx-border-radius: 10;
+    -fx-border-color: #FFFFFF;
+    -fx-background-color:transparent ;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-size:13;
+    -fx-translate-y:-55px;
+}
+
+#connecterbutton:hover{
+    -fx-text-fill: #012A4A;
+}
+
+#creerbutton{
+    -fx-background-color: transparent;
+    -fx-border-color: tranparent ;
+    -fx-text-fill:#FFFFFF ;
+    -fx-font-size:15;
+    -fx-font-family: 'Poppins Medium';
+    -fx-translate-y:-55px;
+}
+
+#creerbutton:hover{
+    -fx-text-fill:#2C7DA0;
+}
+
+#errorMessage{
+    -fx-translate-y: 30px;
+}
+
+/*End Login*/
+
+
+/*start Sign Up*/
+#SignUp{
+    -fx-background-color: #012A4A;
+}
+
+#SignUpbox{
+    -fx-background-color: #134A75;
+    -fx-background-radius: 15px;
+    /*-fx-translate-y:-30px;*/
+    -fx-translate-x:-150px;
+}
+
+#linetwo{
+    -fx-fill:#FFFFFF;
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins Bold';
+
+}
+
+#linetwo:hover{
+    -fx-fill: #2C7DA0;
+}
+
+
+
+
+#inscrirebutton{
+    -fx-border-radius: 10;
+    -fx-border-color: #FFFFFF;
+    -fx-background-color:transparent ;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-size:13;
+    -fx-translate-y:-55px;
+
+}
+
+#inscrirebutton:hover{
+    -fx-text-fill: #012A4A;
+}
+
+#retourbutton{
+    -fx-background-color: transparent;
+    -fx-border-color: tranparent ;
+    -fx-text-fill:#FFFFFF ;
+    -fx-font-size:15;
+    -fx-font-family: 'Poppins Medium';
+    -fx-translate-y:-55px;
+}
+
+#retourbutton:hover{
+    -fx-text-fill: #2C7DA0 ;
+}
+
+
+
+/*End Sign Up*/
+
+/*start dashboard*/
+#Dashboard{
+    -fx-background-color: #EFEFEF;
+}
+
+#Dashboard.Dark-mode {
+    -fx-background-color: derive(#012A4A,0%);
+}
+
+#Filtrer{
+    -fx-translate-y: 30px;
+    -fx-translate-x: -5px;
+    -fx-background-color: #EFEFEF;
+    -fx-background-radius: 8;
+
+}
+
+#Filtrer .text{
+    -fx-translate-x: -6px;
+}
+
+.root.Dark-mode #Filtrer{
+    -fx-background-color: white;
+    -fx-prompt-text-fill: #ced4da;
+}
+
+
+
+#Menu{
+    -fx-background-color: white;
+
+}
+
+.root.Dark-mode #Menu {
+    -fx-background-color:#012A4A ;
+    -fx-border-color: transparent derive(#2C7DA0,0%) transparent transparent ; /* top right bottom left */
+    -fx-border-width: 0 1px 0 0 ;
+}
+
+
+#Menulist{
+    -fx-translate-y: 20px;
+
+}
+
+
+#Acceuil,#EmploiDuTemps,#Stock{
+    -fx-translate-x: 35px;
+    -fx-translate-y: 15px;
+}
+
+#Logging{
+    -fx-translate-x: 48px;
+-fx-translate-y: 10px;
+
+}
+
+
+#acceuilsicon,#moonIcon{
+    -fx-translate-y: -3px;
+
+}
+
+#fileIcon{
+    -fx-translate-y: -3px;
+}
+
+#journalIcon{
+
+    -fx-translate-x: -1px;
+    -fx-translate-y: -1px;
+}
+
+#laptopIcon{
+    -fx-translate-y: -10px;
+}
+
+#moonIcon{
+    -fx-translate-x: 15px;
+}
+
+
+#acceuilLink,#emploidutempsLink,#stockLink,#loggingLink{
+-fx-text-fill: black;
+    -fx-font-size: 12px;
+   -fx-font-family: 'Poppins Light';
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.root.Dark-mode #acceuilLink,
+.root.Dark-mode #emploidutempsLink,
+.root.Dark-mode #stockLink,
+.root.Dark-mode #loggingLink {
+    -fx-text-fill: white;
+}
+
+.root.Dark-mode #acceuilLink:hover,
+.root.Dark-mode #emploidutempsLink:hover,
+.root.Dark-mode #stockLink:hover,
+.root.Dark-mode #loggingLink:hover {
+    -fx-text-fill: #2C7DA0;
+}
+
+#acceuilLink:hover,#emploidutempsLink:hover,#stockLink:hover,#loggingLink:hover{
+    -fx-text-fill: derive(#2C7DA0,0%);
+}
+
+
+#MenuList2{
+-fx-translate-y: 120px;
+    -fx-translate-x: 30px;
+}
+
+
+
+#deconnectericon{
+    -fx-translate-y: 8px;
+    -fx-translate-x: 23px;
+}
+
+#deconnecterLink{
+    -fx-text-fill: #a4161a;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Poppins Light';
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-translate-x: 27px;
+
+}
+
+
+.root.Dark-mode #deconnecterLink{
+    -fx-text-fill: #a4161a;
+}
+
+
+#ModeGroupe{
+
+}
+
+#Modeicon{
+    -fx-translate-y: 5px;
+    -fx-translate-x: 8px;
+
+}
+
+#Mode{
+-fx-translate-x: 20px;
+}
+
+.root.Dark-mode #Mode{
+    -fx-text-fill: white;
+}
+
+#ModeToggle{
+    -fx-translate-x: 25px;
+    -fx-border-color: derive(#012A4A,0%);
+    -fx-border-width: 0.5;
+    -fx-border-radius: 13;
+    -fx-background-radius: 13;
+    -fx-background-color: derive(#012A4A,0%);
+
+}
+
+#ModeToggle .thumb{
+    -fx-background-color: derive(#2C7DA0,0%);
+    -fx-background-radius: 50%;
+    -fx-translate-x: -12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0.1, 0, 1);
+    -fx-transition: all 0.3s ease;
+
+}
+
+#ModeToggle:selected .thumb{
+    -fx-translate-x: 12;
+}
+
+#ModeToggle:selected{
+    -fx-background-color: derive(#EBF2FA,0%);
+}
+
+#ModeToggle.Dark-mode .thumb {
+    -fx-background-color: white;
+}
+
+#ModeToggle.Dark-mode {
+    -fx-base: #666;
+}
+
+#Mode.Dark-mode {
+    -fx-text-fill: white;
+}
+
+
+.root.Dark-mode #moonIcon,
+.root.Dark-mode #acceuilsicon,
+.root.Dark-mode #laptopIcon,
+.root.Dark-mode #fileIcon,
+.root.Dark-mode #journalIcon,
+.root.Dark-mode  {
+    -fx-fill: white;
+}
+
+.root.Dark-mode #deconnectericon{
+    -fx-stroke: white;
+}
+
+#A21Link,#A22Link,#A23Link,#A24Link,#A25Link,#A31Link,#A32Link,#A33Link,#A34Link,#UnixLink,#A41Link,#A42Link,#A43Link{
+    -fx-font-family: 'Poppins Bold';
+    -fx-font-weight:bold;
+    -fx-font-size: 20;
+    -fx-text-fill: #012A4A;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-underline: false;
+
+}
+
+
+#A21Box, #A22Box, #A23Box, #A24Box, #A25Box,
+#A31Box, #A32Box, #A33Box, #A34Box, #UnixBox,
+#A41Box, #A42Box, #A43Box{
+    -fx-border-color:#012A4A;
+    -fx-border-width: 0.5;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-background-color: derive(#ebf2fa,0%);
+}
+
+.root.Dark-mode #A21Box,.root.Dark-mode  #A22Box,.root.Dark-mode #A23Box,.root.Dark-mode #A24Box, .root.Dark-mode #A25Box,
+.root.Dark-mode #A31Box, .root.Dark-mode #A32Box, .root.Dark-mode #A33Box, .root.Dark-mode #A34Box, .root.Dark-mode #UnixBox,
+.root.Dark-mode #A41Box, .root.Dark-mode #A42Box, .root.Dark-mode #A43Box{
+    -fx-background-color: derive(#c4e1ec,0%);
+
+}
+
+#exclamation{
+    -fx-translate-y: -43;
+    -fx-translate-x: -40;
+    -fx-font-family: "Poppins Bold";
+    -fx-fill: orange;
+    -fx-font-size: 25;
+}
+
+
+#DeuxiemeEtage,#TroisiemeEtage,#QuatriemeEtage{
+
+    -fx-text-fill: derive(#012A4A,0%);
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-translate-y: -5px;
+}
+
+.root.Dark-mode #DeuxiemeEtage,.root.Dark-mode #TroisiemeEtage, .root.Dark-mode #QuatriemeEtage {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+#DeuxiemeEtageBox,#TroisiemeEtageBox,#QuatriemeEtageBox{
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+}
+
+
+.root.Dark-mode #DeuxiemeEtageBox,
+.root.Dark-mode #TroisiemeEtageBox,
+.root.Dark-mode #QuatriemeEtageBox {
+    -fx-background-color: #134A75;
+}
+
+
+
+
+
+
+/*end dashboard*/
+
+
+
+/*start window 1*/
+
+#CaracteristiquesSalle{
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-width: 2;
+    -fx-border-color: derive(#134A75,0%);
+}
+
+#CaracteristiquesSalle.Dark-mode {
+    -fx-background-color: #f8f9fa;
+}
+
+#TitleA{
+-fx-font-family: 'Poppins Bold';
+    -fx-font-size: 26;
+    -fx-text-fill: derive(#012A4A,0%);
+}
+
+#Caracteristiquetitle{
+    -fx-font-family: 'Poppins Medium';
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+    -fx-text-fill: #012A4A;
+    -fx-translate-x: -5;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+#Reservepartitle{
+    -fx-font-family: 'Poppins Medium';
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+    -fx-text-fill: #012A4A;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-translate-y: 530;
+    -fx-translate-x: 24;
+}
+
+
+
+#Capacitetitle{
+    -fx-font-family: 'Poppins Medium';
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+    -fx-fill: #012A4A;
+    -fx-underline: false;
+}
+
+
+
+#Nbrposts,#Nbrtables,#Nbrtotal{
+    -fx-font-family: 'Montserrat Bold';
+    -fx-fill: #134A75 ;
+    -fx-font-size: 16;
+}
+
+.root.Dark-mode #Nbrposts,
+.root.Dark-mode #Nbrtables{
+    -fx-font-family: 'Montserrat Bold';
+    -fx-fill: derive(#134A75,0%);
+    -fx-font-size: 16;
+}
+
+
+
+#posts,#tables{
+    -fx-translate-x: 10px;
+}
+
+
+#EmploiDuTempstitle{
+    -fx-font-family: 'Poppins Medium';
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+    -fx-text-fill: #012A4A;
+    -fx-translate-x: -5;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+
+
+}
+
+#OccupePartitle,#logicielstitle {
+    -fx-font-family: 'Poppins Medium';
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+    -fx-fill: #012A4A;
+    -fx-underline: false;
+}
+
+
+
+#Grp,#Prof,#Sect,#Mod{
+    -fx-font-family: 'Montserrat Bold';
+    -fx-fill: #134A75;
+    -fx-font-size: 16;
+}
+
+.root.Dark-mode #Grp,
+.root.Dark-mode  #Prof,
+.root.Dark-mode #Sect,
+.root.Dark-mode #Mod {
+    -fx-font-family: 'Montserrat Bold';
+    -fx-fill: derive(#134A75,0%);
+    -fx-font-size: 16;
+}
+
+
+
+#groupe,#professeur,#section,#module{
+-fx-translate-x: 10px;
+}
+
+
+
+#minus{
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-underline: false;
+}
+
+#minusicon:hover{
+    -fx-fill: derive(#2C7DA0,0%);
+    -fx-stroke: derive(#2C7DA0,0%);
+}
+
+
+#matlabbutton,#javaJdkbutton,#devcbutton,#logiciel4button,#logiciel5button{
+    -fx-background-radius: 50;
+    -fx-background-color: #ced4da;
+    -fx-background-radius: 50;
+    -fx-translate-y: 10;
+
+}
+
+
+#logiciel6button,#logiciel7button,#logiciel8button,#logiciel9button,#logiciel10button{
+    -fx-background-radius: 50;
+    -fx-background-color: #ced4da;
+    -fx-background-radius: 50;
+    -fx-translate-y: 7;
+    -fx-translate-x: 30;
+
+}
+
+
+
+
+
+#logiciel7Grp,#logiciel6Grp,#logiciel8Grp,#logiciel9Grp,#logiciel10Grp{
+-fx-translate-x: 200;
+    -fx-translate-y: -150;
+
+}
+
+
+
+/*end window 1*/
+
+/*start window 2*/
+#EquipementSalle{
+    -fx-background-color: derive(#c4e1ec,0%) ;
+    -fx-border-width: 2;
+    -fx-border-color: #134A75;
+}
+
+
+ #EquipementSalle.Dark-mode  {
+    -fx-background-color: #f8f9fa;
+}
+
+#TitleC,#EquipementSalletitle,#TitleB,#Edttitle{
+    -fx-font-family: 'Poppins Bold';
+    -fx-font-size: 24;
+    -fx-text-fill: derive(#012A4A,0%);
+    -fx-fill: #012A4A;
+}
+
+
+#EquipementTable  .column-header-background {
+    -fx-background-color:derive(#c4e1ec,0%);
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.Dark-mode #EquipementTable  .column-header-background {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+#EquipementTable  .column-header {
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-color: derive(#134A75,0%);
+    -fx-border-width: 0 2px 2px 0;
+    -fx-border-style: solid;
+}
+
+.Dark-mode #EquipementTable  .column-header {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: derive(#134A75,0%);
+    -fx-border-width: 0 2px 2px 0;
+    -fx-border-style: solid;
+}
+
+
+#EquipementTable  .column-header .label {
+    -fx-text-fill: #012A4A;
+    -fx-font-family: 'Montserrat Bold';
+    -fx-alignment: center;
+}
+
+#EquipementTable  {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: derive(#134A75,0%);
+    -fx-border-width: 2px;
+
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.Dark-mode #EquipementTable  {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: derive(#134A75,0%);
+    -fx-border-width: 2px;
+
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+#EquipementTable .table-cell{
+    -fx-background-color: derive(#c4e1ec,0%);
+}
+
+
+.Dark-mode #EquipementTable .table-cell{
+    -fx-background-color: #f8f9fa;
+}
+
+
+#EquipementTable .virtual-flow .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+}
+
+#codeColumn,#ramColumn,#marqueColumn,#logicielsColumn,#disqueColumn,#cpuColumn{
+    -fx-font-family: 'Montserrat Bold';
+    -fx-text-fill: #012A4A;
+    -fx-background-color: derive(#c4e1ec,0%);
+}
+
+.Dark-mode #codeColumn,#ramColumn,#marqueColumn,#logicielsColumn,#disqueColumn,#cpuColumn{
+    -fx-font-family: 'Montserrat Bold';
+    -fx-text-fill: #012A4A;
+    -fx-background-color: #ced4da;
+}
+
+
+#EquipementTable .table-cell {
+    -fx-border-color: derive(#134A75,0%);
+    -fx-border-width: 0 2px 2px 0;
+    -fx-border-style: solid;
+    -fx-padding: 4;
+}
+
+
+.Dark-mode #EquipementTable .table-cell {
+    -fx-border-color: derive(#134A75,0%);
+    -fx-border-width: 0 2px 2px 0;
+    -fx-border-style: solid;
+    -fx-padding: 4;
+}
+
+
+#EquipementTable .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+
+#EquipementTable .table-row-cell:filled:selected {
+    -fx-background-color: derive(#C3CED3,0%);
+    -fx-text-fill: #012A4A;
+    -fx-font-family: "Poppins Medium";
+
+}
+
+#EquipementTable .table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: #012A4A;
+    -fx-font-family: "Poppins Medium";
+
+}
+
+#addRowButton{
+    -fx-background-color: derive(#012A4A,0%);
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins Bold";
+
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+
+}
+
+#addRowButton .text{
+    -fx-translate-y: -1;
+}
+
+
+#deleteRowButton{
+    -fx-background-color: derive(#012A4A,0%);
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins Bold";
+
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+
+}
+
+
+
+#bouttonajtsup .text{
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins Bold";
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+#deleteRowButton .text{
+    -fx-translate-y: -1;
+}
+
+
+
+
+/*end window 2*/
+
+/*start window 3*/
+
+
+#Reservation{
+    -fx-background-color: derive(#89C2D9,0%);
+}
+
+ #Reservation .Dark-mode{
+    -fx-background-color: #f8f9fa ;
+}
+
+#reservertxt{
+    -fx-text-fill: #012A4A;
+    -fx-font-family: "Poppins Bold";
+    -fx-font-size: 20;
+}
+
+#Tablereserv {
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-table-cell-border-color: white;
+    -fx-border-color: white;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-padding: 0px;
+    -fx-translate-y: -25;
+    -fx-text-fill: #012;
+}
+
+.Dark-mode #Tablereserv {
+    -fx-background-color: derive(#f8f9fa,0%);
+    -fx-table-cell-border-color: #012A4A;
+    -fx-border-color: #012A4A;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-padding: 0px;
+    -fx-translate-y: -25;
+    -fx-text-fill: #012;
+}
+
+#Tablereserv .column-header {
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-color: white;
+    -fx-border-width:0 2px 0px 0;
+}
+
+.Dark-mode #Tablereserv .column-header {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #012A4A;
+    -fx-border-width:0 2px 0 0;
+}
+
+#Tablereserv .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+}
+
+#Tablereserv #heure  {
+    -fx-background-color:derive(#c4e1ec,0%);
+    -fx-border-color: white;
+    -fx-border-width: 0px 1px 1px 1px;
+    -fx-alignment: CENTER;
+}
+
+.Dark-mode #Tablereserv #heure  {
+    -fx-background-color: #F8F9FA;
+    -fx-border-color: #012A4A;
+    -fx-border-width: 0px 1px 1px 1px;
+    -fx-alignment: CENTER;
+}
+
+#Tablereserv #date {
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-color: white;
+    -fx-border-width: 0px 1px 1px 0;
+    -fx-alignment: CENTER;
+}
+
+.Dark-mode #Tablereserv #date {
+    -fx-background-color: #F8F9FA;
+    -fx-border-color: #012A4A;
+    -fx-border-width: 0px 1px 1px 0;
+    -fx-alignment: CENTER;
+}
+
+#Tablereserv  #enseignant {
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-color: white;
+    -fx-border-width: 0px 0 1px 1px;
+    -fx-alignment: CENTER;
+}
+
+.Dark-mode #Tablereserv  #enseignant {
+    -fx-background-color: #F8F9FA;
+    -fx-border-color: #012A4A;
+    -fx-border-width: 0px 0 1px 1px;
+    -fx-alignment: CENTER;
+}
+
+
+#Tablereserv .placeholder .label {
+    -fx-text-fill: #012;
+    -fx-font-size: 14;
+}
+
+#Tablereserv .cell{
+    -fx-text-fill: #012;
+    -fx-font-family: "Poppins Medium";
+}
+
+
+#bouttonsupprimer{
+    -fx-background-color: derive(#2C7DA0,0%);
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-text-fill: white;
+    -fx-font-family: 'Montserrat Regular';
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-translate-y: -23;
+    -fx-translate-x: -20;
+}
+
+#bouttonsupprimer .text{
+    -fx-fill: white;
+    -fx-font-family: 'kanit Medium';
+    -fx-font-size: 17.5;
+    -fx-translate-y: -6;
+}
+
+.Dark-mode #bouttonsupprimer{
+    -fx-background-color: derive(#012A4A,0%);
+    -fx-text-fill: white;
+}
+
+
+/*ennd window 3*/
+
+/*start filtrage*/
+#Filtrage{
+    -fx-background-color:derive(#c4e1ec,0%);
+    -fx-border-color: derive(#134A75,0%);
+    -fx-border-width: 2;
+}
+
+ #Filtrage.Dark-mode {
+    -fx-background-color:#f8f9fa;  /* Changed from #FFFFFF to match dark theme */
+}
+
+#filtrjour,#filtrheure,#filtrcaract,#filtrdate{
+    -fx-fill: derive(#012,0%);
+    -fx-font-family: 'Poppins Bold';
+    -fx-font-size: 20;
+}
+
+.Dark-mode #filtrjour, .Dark-mode #filtrheure, .Dark-mode #filtrcaract{
+    -fx-fill: #292D32;
+    -fx-font-family: 'Poppins Bold';
+    -fx-font-size: 20;
+}
+
+
+#samedibutton,#dimanchebutton,#lundibutton,#mardibutton,#mercredibutton,#jeudibutton{
+    -fx-background-radius: 50;
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 50;
+    -fx-translate-y: 17;
+}
+
+
+#sameditext,#dimanchetext,#lunditext,#marditext,#mercreditext,#jeuditext{
+    -fx-text-fill: #012A4A;
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 13;
+    -fx-translate-y: 7;
+    -fx-translate-x: 5px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-underline: false;
+}
+
+
+
+#heurestart,#heureend{
+    -fx-fill: #012A4A;
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 13;
+    -fx-translate-y: 10;
+}
+
+#datejour{
+    -fx-fill: #012A4A;
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 13;
+    -fx-translate-y: -65;
+}
+
+
+#datemois{
+    -fx-fill: #012A4A;
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 13;
+    -fx-translate-y: -40;
+}
+#heurestartchoice,#heureendchoice{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #012A4A;
+    -fx-translate-x: 10px;
+    -fx-translate-y: 5px;
+    -fx-font-family: "Poppins Regular";
+}
+
+#heureendchoice,#heurestartchoice,#datemoischoice,#datejourchoice .label{
+    -fx-font-family: "Poppins Medium";
+    -fx-text-fill: #012A4A;
+}
+
+.choice-box .arrow{
+    -fx-background-color: derive(#134A75,0%);
+}
+#datemoischoice{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #012A4A;
+    -fx-translate-y: -45px;
+    -fx-font-family: "Poppins Regular";
+}
+
+
+#datejourchoice{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #012A4A;
+    -fx-translate-y: -70px;
+    -fx-font-family: "Poppins Regular";
+}
+
+
+
+#confirmerfiltragebutton{
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 1.5;
+    -fx-border-color: derive(#134A75,0%);
+    -fx-text-fill: #134A75;
+    -fx-font-family: 'Poppins Bold';
+}
+.Dark-mode #confirmerfiltragebutton{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 1.5;
+    -fx-border-color: derive(#292D32,0%);
+    -fx-text-fill: #292D32;
+    -fx-font-family: 'Poppins Bold';
+}
+
+
+#confirmerfiltragebutton:hover{
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+.Dark-mode #confirmerfiltragebutton:hover{
+    -fx-border-color: #53504a;
+    -fx-text-fill: #53504a;
+}
+
+#filtreTable{
+    -fx-border-color: white;
+    -fx-border-width: 2;
+}
+
+
+.Dark-mode #filtreTable{
+    -fx-border-color: #292D32;
+    -fx-border-width: 2;
+}
+
+#filtreTable .column-header {
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-color: transparent transparent white transparent;
+    -fx-border-width: 0 0 2 0; /* Bottom border only */
+}
+
+.Dark-mode #filtreTable .column-header {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: transparent transparent #292D32 transparent;
+    -fx-border-width: 0 0 2 0; /* Bottom border only */
+}
+
+#filtreTable .column-header .label {
+    -fx-text-fill: derive(#012A4A,0%);
+    -fx-font-family: 'Montserrat Bold';
+}
+
+#filtreTable .table-cell {
+    -fx-text-fill: #012A4A;
+    -fx-font-family: 'Montserrat Bold';
+    -fx-alignment: CENTER;
+}
+
+#filtreTable .table-row-cell{
+    -fx-background-color: derive(#c4e1ec,0%) ;
+}
+
+.Dark-mode #filtreTable .table-row-cell {
+    -fx-background-color: #f8f9fa ;
+}
+
+
+
+
+#filtreTable .scroll-bar:vertical{
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+
+
+
+#filtreTable .scroll-bar:horizontal{
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+/*end filtrage*/
+
+/*start reservation*/
+#Reservation{
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-width: 2;
+    -fx-border-color: derive(#134A75,0%);
+}
+
+ #Reservation.Dark-mode{
+    -fx-background-color: derive(#f8f9fa,0%);
+}
+
+#reservertitle{
+    -fx-text-fill: derive(#134A75,0%);
+    -fx-font-family: 'Poppins Bold';
+    -fx-font-size: 30;
+    -fx-translate-y: -20;
+}
+
+
+.Dark-mode #reservertitle{
+    -fx-text-fill: derive(#292D32,0%);
+}
+
+#reserverButton{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 1.5;
+    -fx-border-color: derive(#134A75,0%);
+    -fx-text-fill: #134A75;
+    -fx-font-family: 'Poppins Bold';
+    -fx-translate-y: 23;
+}
+
+
+.Dark-mode #reserverButton{
+    -fx-background-color: transparent;
+    -fx-border-color: derive(#292D32,0%);
+    -fx-text-fill: #292D32;
+    -fx-font-family: 'Poppins Bold';
+    -fx-translate-y: 23;
+}
+
+#reserverButton:hover{
+    -fx-border-color: derive(#292D32,0%);
+    -fx-text-fill:derive(#292D32,0%) ;
+    -fx-background-color: white;
+}
+
+
+#nomEnseignant{
+    -fx-prompt-text-fill: #C3CED3;
+    -fx-fill: #012A4A;
+    -fx-font-size: 10;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-background-color: white;
+    -fx-translate-y: 25;
+}
+
+.Dark-mode #nomEnseignant{
+    -fx-prompt-text-fill: #a6a6a8;
+    -fx-fill: derive(#292D32,0%);
+    -fx-background-color: white;
+}
+
+
+.label-salle{
+-fx-text-fill: #012A4A ;
+}
+
+.stack-salle{
+-fx-border-color: derive(#012A4A,0%);
+-fx-border-radius: 8;
+-fx-background-radius: 8;
+-fx-padding: 10;
+-fx-background-color: derive(#EBF2FA,0%);
+-fx-translate-x:100;
+-fx-translate-y:-20;
+    -fx-border-width: 1.5;
+    -fx-font-weight: bold;
+
+}
+
+
+
+.Dark-mode .stack-salle{
+    -fx-border-color: derive(#292D32,0%);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-background-color: white;
+    -fx-padding: 10;
+    -fx-translate-x:100;
+    -fx-translate-y:-20;
+    -fx-border-width: 1.5;
+    -fx-font-weight: bold;
+}
+
+.stack-salle-selected{
+
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-background-color: derive(#C3CED3,0%);
+    -fx-translate-x:100;
+    -fx-translate-y:-20;
+    -fx-border-width: 1.5;
+    -fx-font-weight: bold;
+}
+
+.Dark-mode.stack-salle-selected{
+    -fx-border-color: derive(#292D32,0%);
+    -fx-background-color: #C3CED3;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-translate-x:100;
+    -fx-translate-y:-20;
+    -fx-border-width: 1.5;
+    -fx-font-weight: bold;
+}
+
+
+
+/*end reservation*/
+
+/*start enmploi du temps*/
+#EmploiDuTempsInterf.Dark-mode{
+    -fx-background-color: #012A4A;
+}
+
+
+#EdtScroll{
+    -fx-background-color: transparent;
+
+}
+
+
+
+
+.Dark-mode #EdtScroll{
+    -fx-background-color: #012A4A;
+}
+
+#EdtsBox{
+    -fx-translate-x: 130;
+}
+
+.Dark-mode #EdtsBox{
+    -fx-background-color: #012A4A;
+}
+
+#A21Grp,#A22Grp,#A23Grp,#A24Grp,#A25Grp,#A31Grp,#A32Grp,#A33Grp,#A34Grp,#UNIXGrp,#A41Grp,#A42Grp,#A43Grp{
+    -fx-translate-y: 50;
+}
+
+
+#A21Edt,#A22Edt,#A23Edt,#A24Edt,#A25Edt,#A31Edt,#A32Edt,#A33Edt,#A34Edt,#UNIXEdt,#A41Edt,#A42Edt,#A43Edt{
+    -fx-translate-y: 15;
+    -fx-translate-x: 300 ;
+    -fx-font-family: "Poppins Bold";
+    -fx-fill: derive(#134A75,0%);
+    -fx-font-size: 30;
+}
+
+.table-view .scroll-bar:vertical{-fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;}
+.table-view .scroll-bar:horizontal{-fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;}
+
+
+
+
+
+.Dark-mode #A21Edt,
+.Dark-mode #A22Edt,
+.Dark-mode #A23Edt,
+.Dark-mode #A24Edt,
+.Dark-mode #A25Edt,
+.Dark-mode #A31Edt,
+.Dark-mode #A32Edt,
+.Dark-mode #A33Edt,
+.Dark-mode #A34Edt,
+.Dark-mode #UNIXEdt,
+.Dark-mode #A41Edt,
+.Dark-mode #A42Edt,
+.Dark-mode #A43Edt{
+
+    -fx-fill: white;
+}
+
+
+#A21Button,#A22Button,#A23Button,#A24Button,#A25Button,#A31Button,#A32Button,#A33Button,#A34Button,#UNIXButton,#A41Button,#A42Button,#A43Button{
+    -fx-translate-x: 315;
+    -fx-translate-y: 10;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-background-color: transparent;
+    -fx-border-color: #134A75;
+    -fx-border-width: 1.5;
+    -fx-font-family: "Poppins Bold";
+    -fx-font-size: 15;
+    -fx-text-fill: #134A75;
+}
+
+.Dark-mode #A21Button,
+.Dark-mode #A22Button,
+.Dark-mode #A23Button,
+.Dark-mode #A24Button,
+.Dark-mode #A25Button,
+.Dark-mode #A31Button,
+.Dark-mode #A32Button,
+.Dark-mode #A33Button,
+.Dark-mode #A34Button,
+.Dark-mode #UNIXButton,
+.Dark-mode #A41Button,
+.Dark-mode #A42Button,
+.Dark-mode #A43Button{
+
+    -fx-text-fill: white;
+    -fx-border-color: white;
+
+}
+
+.Dark-mode #A21Button:hover,
+.Dark-mode #A22Button:hover,
+.Dark-mode #A23Button:hover,
+.Dark-mode #A24Button:hover,
+.Dark-mode #A25Button:hover,
+.Dark-mode #A31Button:hover,
+.Dark-mode #A32Button:hover,
+.Dark-mode #A33Button:hover,
+.Dark-mode #A34Button:hover,
+.Dark-mode #UNIXButton:hover,
+.Dark-mode #A41Button:hover,
+.Dark-mode #A42Button:hover,
+.Dark-mode #A43Button:hover {
+
+    -fx-text-fill: #134A75;
+    -fx-border-color: white;
+    -fx-background-color: white;
+
+}
+
+#A21Button:hover,#A22Button:hover,#A23Button:hover,#A24Button:hover,#A25Button:hover,#A31Button:hover,#A32Button:hover,#A33Button:hover,#A34Button:hover,#UNIXButton:hover,#A41Button:hover,#A42Button:hover,#A43Button:hover {
+    -fx-background-color: #134A75;
+    -fx-text-fill: white;
+}
+
+
+#timeTableView21,
+#timeTableView22,
+#timeTableView23,
+#timeTableView24,
+#timeTableView25,
+#timeTableView31,
+#timeTableView32,
+#timeTableView33,
+#timeTableView34,
+#timeTableViewUNIX,
+#timeTableView41,
+#timeTableView42,
+#timeTableView43 {
+    -fx-border-color: #C3CED3;
+    -fx-border-width: 1px;
+    -fx-translate-y: 10;
+    -fx-translate-x: -50;
+}
+
+/* Fix for the day column visibility in tables */
+#dayColumn21, #dayColumn22, #dayColumn23, #dayColumn24, #dayColumn25,
+#dayColumn31, #dayColumn32, #dayColumn33, #dayColumn34, #dayColumnUNIX,
+#dayColumn41, #dayColumn42, #dayColumn43 {
+    -fx-visibility: visible;
+    -fx-opacity: 1;
+    -fx-text-fill: derive(#012A4A,0%);
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-size: 15;
+}
+
+/* Ensure the day column is visible in dark mode too */
+.Dark-mode #dayColumn21, .Dark-mode #dayColumn22, .Dark-mode #dayColumn23,
+.Dark-mode #dayColumn24, .Dark-mode #dayColumn25, .Dark-mode #dayColumn31,
+.Dark-mode #dayColumn32, .Dark-mode #dayColumn33, .Dark-mode #dayColumn34,
+.Dark-mode #dayColumnUNIX, .Dark-mode #dayColumn41, .Dark-mode #dayColumn42,
+.Dark-mode #dayColumn43 {
+    -fx-text-fill: white;
+}
+
+#timeTableView21 .column-header,
+#timeTableView22 .column-header,
+#timeTableView23 .column-header,
+#timeTableView24 .column-header,
+#timeTableView25 .column-header,
+#timeTableView31 .column-header,
+#timeTableView32 .column-header,
+#timeTableView33 .column-header,
+#timeTableView34 .column-header,
+#timeTableViewUNIX .column-header,
+#timeTableView41 .column-header,
+#timeTableView42 .column-header,
+#timeTableView43 .column-header,
+#timeTableView21 .filler,
+#timeTableView22 .filler,
+#timeTableView23 .filler,
+#timeTableView24 .filler,
+#timeTableView25 .filler,
+#timeTableView31 .filler,
+#timeTableView32 .filler,
+#timeTableView33 .filler,
+#timeTableView34 .filler,
+#timeTableViewUNIX .filler,
+#timeTableView41 .filler,
+#timeTableView42 .filler,
+#timeTableView43 .filler,
+#timeTableView21 .corner,
+#timeTableView22 .corner,
+#timeTableView23 .corner,
+#timeTableView24 .corner,
+#timeTableView25 .corner,
+#timeTableView31 .corner,
+#timeTableView32 .corner,
+#timeTableView33 .corner,
+#timeTableView34 .corner,
+#timeTableViewUNIX .corner,
+#timeTableView41 .corner,
+#timeTableView42 .corner,
+#timeTableView43 .corner {
+    -fx-background-color: transparent;
+    -fx-border-color: #C3CED3;
+    -fx-border-width: 0 0 1px 0;
+
+    -fx-border-color: transparent #C3CED3 transparent transparent;
+    -fx-border-width: 0 2px 0 0;
+    -fx-background-color: transparent;
+    -fx-visibility: visible; /* Ensure visibility */
+}
+
+#timeTableView21 .table-column,
+#timeTableView22 .table-column,
+#timeTableView23 .table-column,
+#timeTableView24 .table-column,
+#timeTableView25 .table-column,
+#timeTableView31 .table-column,
+#timeTableView32 .table-column,
+#timeTableView33 .table-column,
+#timeTableView34 .table-column,
+#timeTableViewUNIX .table-column,
+#timeTableView41 .table-column,
+#timeTableView42 .table-column,
+#timeTableView43 .table-column {
+    -fx-alignment: center;
+    -fx-visibility: visible; /* Ensure all columns are visible */
+}
+
+
+#timeTableView21 .table-cell,
+#timeTableView22 .table-cell,
+#timeTableView23 .table-cell,
+#timeTableView24 .table-cell,
+#timeTableView25 .table-cell,
+#timeTableView31 .table-cell,
+#timeTableView32 .table-cell,
+#timeTableView33 .table-cell,
+#timeTableView34 .table-cell,
+#timeTableViewUNIX .table-cell,
+#timeTableView41 .table-cell,
+#timeTableView42 .table-cell,
+#timeTableView43 .table-cell {
+    -fx-alignment: center;
+    -fx-border-color: #C3CED3;
+    -fx-border-width: 0 1px 0 0;
+    -fx-text-fill: derive(#292D32,0%);
+    -fx-font-family: "Poppins Regular";
+    -fx-font-size: 10;
+}
+
+
+#timeTableView21 #dayColumn21.table-cell,
+#timeTableView22 #dayColumn22.table-cell,
+#timeTableView23 #dayColumn23.table-cell,
+#timeTableView24 #dayColumn24.table-cell,
+#timeTableView25 #dayColumn25.table-cell,
+#timeTableView31 #dayColumn31.table-cell,
+#timeTableView32 #dayColumn32.table-cell,
+#timeTableView33 #dayColumn33.table-cell,
+#timeTableView34 #dayColumn34.table-cell,
+#timeTableViewUNIX #dayColumnUNIX.table-cell,
+#timeTableView41 #dayColumn41.table-cell,
+#timeTableView42 #dayColumn42.table-cell,
+#timeTableView43 #dayColumn43.table-cell {
+    -fx-alignment: center;
+    -fx-border-color: #C3CED3;
+    -fx-border-width: 0 1px 0 0;
+    -fx-text-fill: derive(#012A4A,0%);
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-size: 13;
+}
+
+.Dark-mode #timeTableView21 #dayColumn21.table-cell,
+.Dark-mode #timeTableView22 #dayColumn22.table-cell,
+.Dark-mode #timeTableView23 #dayColumn23.table-cell,
+.Dark-mode #timeTableView24 #dayColumn24.table-cell,
+.Dark-mode #timeTableView25 #dayColumn25.table-cell,
+.Dark-mode #timeTableView31 #dayColumn31.table-cell,
+.Dark-mode #timeTableView32 #dayColumn32.table-cell,
+.Dark-mode #timeTableView33 #dayColumn33.table-cell,
+.Dark-mode #timeTableView34 #dayColumn34.table-cell,
+.Dark-mode #timeTableViewUNIX #dayColumnUNIX.table-cell,
+.Dark-mode #timeTableView41 #dayColumn41.table-cell,
+.Dark-mode #timeTableView42 #dayColumn42.table-cell,
+.Dark-mode #timeTableView43 #dayColumn43.table-cell {
+    -fx-alignment: center;
+    -fx-border-color: #C3CED3;
+    -fx-border-width: 0 1px 0 0;
+    -fx-text-fill: white;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-size: 13;
+}
+
+
+
+.Dark-mode #timeTableView21 .table-cell,
+.Dark-mode #timeTableView22 .table-cell,
+.Dark-mode #timeTableView23 .table-cell,
+.Dark-mode #timeTableView24 .table-cell,
+.Dark-mode #timeTableView25 .table-cell,
+.Dark-mode #timeTableView31 .table-cell,
+.Dark-mode #timeTableView32 .table-cell,
+.Dark-mode #timeTableView33 .table-cell,
+.Dark-mode #timeTableView34 .table-cell,
+.Dark-mode #timeTableViewUNIX .table-cell,
+.Dark-mode #timeTableView41 .table-cell,
+.Dark-mode #timeTableView42 .table-cell,
+.Dark-mode #timeTableView43 .table-cell {
+    -fx-alignment: center;
+    -fx-border-color: #C3CED3;
+    -fx-border-width: 0 1px 0 0;
+    -fx-text-fill: white;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-size: 13
+}
+
+
+
+#timeTableView21 .table-row-cell .table-cell,
+#timeTableView22 .table-row-cell .table-cell,
+#timeTableView23 .table-row-cell .table-cell,
+#timeTableView24 .table-row-cell .table-cell,
+#timeTableView25 .table-row-cell .table-cell,
+#timeTableView31 .table-row-cell .table-cell,
+#timeTableView32 .table-row-cell .table-cell,
+#timeTableView33 .table-row-cell .table-cell,
+#timeTableView34 .table-row-cell .table-cell,
+#timeTableViewUNIX .table-row-cell .table-cell,
+#timeTableView41 .table-row-cell .table-cell,
+#timeTableView42 .table-row-cell .table-cell,
+#timeTableView43 .table-row-cell .table-cell {
+    -fx-border-width: 0 1px 1px 0;
+    -fx-border-color: #C3CED3;}
+
+
+
+
+#timeTableView21 .table-row-cell:selected .table-cell,
+#timeTableView22 .table-row-cell:selected .table-cell,
+#timeTableView23 .table-row-cell:selected .table-cell,
+#timeTableView24 .table-row-cell:selected .table-cell,
+#timeTableView25 .table-row-cell:selected .table-cell,
+#timeTableView31 .table-row-cell:selected .table-cell,
+#timeTableView32 .table-row-cell:selected .table-cell,
+#timeTableView33 .table-row-cell:selected .table-cell,
+#timeTableView34 .table-row-cell:selected .table-cell,
+#timeTableViewUNIX .table-row-cell:selected .table-cell,
+#timeTableView41 .table-row-cell:selected .table-cell,
+#timeTableView42 .table-row-cell:selected .table-cell,
+#timeTableView43 .table-row-cell:selected .table-cell {
+    -fx-text-fill: derive(#292D32,0%);
+}
+
+.Dark-mode #timeTableView21 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView22 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView23 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView24 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView25 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView31 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView32 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView33 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView34 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableViewUNIX .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView41 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView42 .table-row-cell:selected .table-cell,
+.Dark-mode #timeTableView43 .table-row-cell:selected .table-cell {
+    -fx-text-fill: white;
+}
+
+
+#timeTableView21 .column-header .label,
+#timeTableView22 .column-header .label,
+#timeTableView23 .column-header .label,
+#timeTableView24 .column-header .label,
+#timeTableView25 .column-header .label,
+#timeTableView31 .column-header .label,
+#timeTableView32 .column-header .label,
+#timeTableView33 .column-header .label,
+#timeTableView34 .column-header .label,
+#timeTableViewUNIX .column-header .label,
+#timeTableView41 .column-header .label,
+#timeTableView42 .column-header .label,
+#timeTableView43 .column-header .label {
+    -fx-text-fill: derive(#012A4A,0%);
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-size: 15;
+    -fx-opacity: 1; /* Ensure visibility */
+}
+
+
+.Dark-mode #timeTableView21 .column-header .label,
+.Dark-mode #timeTableView22 .column-header .label,
+.Dark-mode #timeTableView23 .column-header .label,
+.Dark-mode #timeTableView24 .column-header .label,
+.Dark-mode #timeTableView25 .column-header .label,
+.Dark-mode #timeTableView31 .column-header .label,
+.Dark-mode #timeTableView32 .column-header .label,
+.Dark-mode #timeTableView33 .column-header .label,
+.Dark-mode #timeTableView34 .column-header .label,
+.Dark-mode #timeTableViewUNIX .column-header .label,
+.Dark-mode #timeTableView41 .column-header .label,
+.Dark-mode #timeTableView42 .column-header .label,
+.Dark-mode #timeTableView43 .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-size: 15}
+
+
+#timeTableView21 .table-row-cell,
+#timeTableView22 .table-row-cell,
+#timeTableView23 .table-row-cell,
+#timeTableView24 .table-row-cell,
+#timeTableView25 .table-row-cell,
+#timeTableView31 .table-row-cell,
+#timeTableView32 .table-row-cell,
+#timeTableView33 .table-row-cell,
+#timeTableView34 .table-row-cell,
+#timeTableViewUNIX .table-row-cell,
+#timeTableView41 .table-row-cell,
+#timeTableView42 .table-row-cell,
+#timeTableView43 .table-row-cell {
+    -fx-border-color: transparent transparent #C3CED3 transparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-cell-size: 50px;
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 0 0;
+}
+
+
+
+
+.Dark-mode #timeTableView21 .table-row-cell,
+.Dark-mode #timeTableView22 .table-row-cell,
+.Dark-mode #timeTableView23 .table-row-cell,
+.Dark-mode #timeTableView24 .table-row-cell,
+.Dark-mode #timeTableView25 .table-row-cell,
+.Dark-mode #timeTableView31 .table-row-cell,
+.Dark-mode #timeTableView32 .table-row-cell,
+.Dark-mode #timeTableView33 .table-row-cell,
+.Dark-mode #timeTableView34 .table-row-cell,
+.Dark-mode #timeTableViewUNIX .table-row-cell,
+.Dark-mode #timeTableView41 .table-row-cell,
+.Dark-mode #timeTableView42 .table-row-cell,
+.Dark-mode #timeTableView43 .table-row-cell {
+    -fx-border-color: transparent transparent white transparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-cell-size: 50px;
+    -fx-background-color: #012A4A;
+}
+
+
+
+
+#timeTableView21 .column-header-background,
+#timeTableView22 .column-header-background,
+#timeTableView23 .column-header-background,
+#timeTableView24 .column-header-background,
+#timeTableView25 .column-header-background,
+#timeTableView31 .column-header-background,
+#timeTableView32 .column-header-background,
+#timeTableView33 .column-header-background,
+#timeTableView34 .column-header-background,
+#timeTableViewUNIX .column-header-background,
+#timeTableView41 .column-header-background,
+#timeTableView42 .column-header-background,
+#timeTableView43 .column-header-background {
+    -fx-background-color: transparent;
+    -fx-border-color: #C3CEDE;
+    -fx-padding: 0 0 0 0;
+    -fx-border-width: 0 0 2px 0;
+    -fx-opacity: 1; /* Ensure visibility */
+}
+
+.Dark-mode #timeTableView21 .column-header-background,
+.Dark-mode #timeTableView22 .column-header-background,
+.Dark-mode #timeTableView23 .column-header-background,
+.Dark-mode #timeTableView24 .column-header-background,
+.Dark-mode #timeTableView25 .column-header-background,
+.Dark-mode #timeTableView31 .column-header-background,
+.Dark-mode #timeTableView32 .column-header-background,
+.Dark-mode #timeTableView33 .column-header-background,
+.Dark-mode #timeTableView34 .column-header-background,
+.Dark-mode #timeTableViewUNIX .column-header-background,
+.Dark-mode #timeTableView41 .column-header-background,
+.Dark-mode #timeTableView42 .column-header-background,
+.Dark-mode #timeTableView43 .column-header-background {
+    -fx-border-color: white;
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-width: 0 0 2px 0;
+    -fx-padding: 0 0 0 0;
+}
+
+
+
+
+
+
+
+.root.Dark-mode #timeTableView21 .column-header,
+.root.Dark-mode #timeTableView22 .column-header,
+.root.Dark-mode #timeTableView23 .column-header,
+.root.Dark-mode #timeTableView24 .column-header,
+.root.Dark-mode #timeTableView25 .column-header,
+.root.Dark-mode #timeTableView31 .column-header,
+.root.Dark-mode #timeTableView32 .column-header,
+.root.Dark-mode #timeTableView33 .column-header,
+.root.Dark-mode #timeTableView34 .column-header,
+.root.Dark-mode #timeTableViewUNIX .column-header,
+.root.Dark-mode #timeTableView41 .column-header,
+.root.Dark-mode #timeTableView42 .column-header,
+.root.Dark-mode #timeTableView43 .column-header,
+.root.Dark-mode #timeTableView21 .filler,
+.root.Dark-mode #timeTableView22 .filler,
+.root.Dark-mode #timeTableView23 .filler,
+.root.Dark-mode #timeTableView24 .filler,
+.root.Dark-mode #timeTableView25 .filler,
+.root.Dark-mode #timeTableView31 .filler,
+.root.Dark-mode #timeTableView32 .filler,
+.root.Dark-mode #timeTableView33 .filler,
+.root.Dark-mode #timeTableView34 .filler,
+.root.Dark-mode #timeTableViewUNIX .filler,
+.root.Dark-mode #timeTableView41 .filler,
+.root.Dark-mode #timeTableView42 .filler,
+.root.Dark-mode #timeTableView43 .filler,
+.root.Dark-mode #timeTableView21 .corner,
+.root.Dark-mode #timeTableView22 .corner,
+.root.Dark-mode #timeTableView23 .corner,
+.root.Dark-mode #timeTableView24 .corner,
+.root.Dark-mode #timeTableView25 .corner,
+.root.Dark-mode #timeTableView31 .corner,
+.root.Dark-mode #timeTableView32 .corner,
+.root.Dark-mode #timeTableView33 .corner,
+.root.Dark-mode #timeTableView34 .corner,
+.root.Dark-mode #timeTableViewUNIX .corner,
+.root.Dark-mode #timeTableView41 .corner,
+.root.Dark-mode #timeTableView42 .corner,
+.root.Dark-mode #timeTableView43 .corner {
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-border-color: white;
+    -fx-border-width: 0 0 1px 0;
+    -fx-visibility: visible; /* Ensure visibility */
+}
+
+.Dark-mode #timeTableView21 .column-header .label,
+.Dark-mode #timeTableView22 .column-header .label,
+.Dark-mode #timeTableView23 .column-header .label,
+.Dark-mode #timeTableView24 .column-header .label,
+.Dark-mode #timeTableView25 .column-header .label,
+.Dark-mode #timeTableView31 .column-header .label,
+.Dark-mode #timeTableView32 .column-header .label,
+.Dark-mode #timeTableView33 .column-header .label,
+.Dark-mode #timeTableView34 .column-header .label,
+.Dark-mode #timeTableViewUNIX .column-header .label,
+.Dark-mode #timeTableView41 .column-header .label,
+.Dark-mode #timeTableView42 .column-header .label,
+.Dark-mode #timeTableView43 .column-header .label
+{
+    -fx-text-fill: #012;
+}
+
+#EdtScroll .scroll-bar:vertical{
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+
+
+
+
+
+
+#timeTableView21 .scroll-bar:vertical,
+#timeTableView21 .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+
+/*end emploi du temps*/
+
+
+/*start stock*/
+
+#TableColonn.corner {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+}
+
+#TableColonn{
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-font-weight: normal;
+    -fx-text-fill: #2C7DA0;
+}
+
+.Dark-mode #TableColonn{
+    -fx-border-color: white; /* This sets the overall border color */
+    -fx-font-weight: normal;
+    -fx-text-fill: derive(#c4e1ec,0%);
+}
+
+#TableColonn .scroll-bar:vertical{
+    -fx-opacity: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-min-width: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+#TableColonn .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-min-width: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+
+
+#TableColonn .table-cell {
+    -fx-border-color: #ddd;
+    -fx-border-width: 0 1px 1px 0; /* bas + droite */
+    -fx-font-size: 13px;
+    -fx-alignment: center;
+    -fx-font-family: "Poppins Regular";
+}
+
+.Dark-mode #TableColonn .table-cell {
+    -fx-border-color: white;
+}
+
+.Dark-mode #TableColonn .table-cell .text{
+    -fx-fill: white;
+}
+
+#TableColonn.table-row-cell .table-cell{
+    -fx-border-width: 0 0 1px 0;
+    -fx-alignment: center;
+}
+
+#TableColonn .column-header-background {
+    -fx-background-color: white; /* même fond que les cellules */
+    -fx-border-color: lightgray;
+    -fx-border-width: 0;
+}
+
+/* Dark mode styles for the column header background */
+.Dark-mode #TableColonn .column-header-background {
+    -fx-background-color:derive(#c4e1ec,0%) ;
+    -fx-border-color: transparent transparent white transparent;
+    -fx-border-width: 0 0 1px 0;
+}
+
+#TableColonn .column-header .label {
+    -fx-background-color: transparent; /* supprime le fond individuel des colonnes */
+    -fx-text-fill: derive(#134A75,0%);
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+}
+
+/* Dark mode styles for the column header label */
+.Dark-mode #TableColonn .column-header .label {
+    -fx-background-color: derive(#c4e1ec,0%); /* supprime le fond individuel des colonnes */
+    -fx-text-fill: #012A4A;
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+}
+
+#TableColonn .column-header {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 1 0; /* Sets the bottom border in light mode */
+    -fx-border-color: lightgray;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-insets: 0;
+}
+
+/* Dark mode styles for the column header */
+.Dark-mode #TableColonn .column-header {
+    -fx-background-color: derive(#c4e1ec,0%);
+    /* You need to explicitly set the bottom border here for dark mode */
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: white;
+}
+
+#TableColonn .table-row-cell {
+    -fx-cell-size: 32px;
+}
+
+/* Dark mode styles for table row cells */
+.Dark-mode #TableColonn .table-row-cell {
+    -fx-cell-size: 32px;
+    -fx-background-color: #012A4A;
+}
+
+#TableColonn .filler {
+    -fx-background-color: white;
+}
+
+/* Dark mode styles for the filler area */
+.Dark-mode #TableColonn .filler {
+    -fx-background-color: #012A4A;
+}
+
+#TableColonn .corner {
+    -fx-background-color: white;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+/* Dark mode styles for the corner area */
+.Dark-mode #TableColonn .corner {
+    -fx-background-color: #012A4A;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+
+/*end stock*/
+
+/*start journal*/
+
+
+
+#txtcolor2{
+    -fx-text-fill: derive(#134A75,0%);
+    -fx-font-size:25;
+-fx-font-family: 'Poppins Bold';
+-fx-border-width: 0 0 2 0;
+    -fx-border-color: derive(#012A4A,0%);
+    -fx-padding: 0 0 0.25 0 ;
+    -fx-alignment: center;
+    -fx-translate-x: 400;
+}
+
+
+#txtcolor1{
+    -fx-text-fill: derive(#134A75,0%);
+    -fx-font-size:25;
+    -fx-font-family: 'Poppins Bold';
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: derive(#012A4A,0%);
+    -fx-padding: 0 0 0.25 0 ;
+    -fx-alignment: center;
+}
+
+
+.Dark-mode #txtcolor1,.Dark-mode #txtcolor2{
+    -fx-text-fill: derive(#89C2D9,0%);
+    -fx-border-color: derive(#FFFFFF,0%);
+}
+
+
+#Label{
+    -fx-background-color: derive(#134A75,0%);
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size:12;
+    -fx-translate-y: 80;
+}
+
+
+.Dark-mode #Label{
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-text-fill: derive(#134A75,0%);
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size:12;
+}
+
+#Label .text{
+    -fx-translate-x: 35;
+}
+
+#TableJournal{
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-font-weight: normal;
+    -fx-font-family: 'Poppins Medium';
+    -fx-text-fill: derive(#292D32,0%);
+    -fx-font-size:12px;
+
+}
+
+.Dark-mode #TableJournal{
+    -fx-background-color: #012A4A;
+    -fx-border-color: white;
+    -fx-font-weight: normal;
+    -fx-font-family: 'Poppins Medium';
+    -fx-text-fill: white;
+    -fx-font-size:12px;
+}
+#MeterielBox,#LogicielBox{
+    -fx-translate-x: 80;
+}
+
+
+#TableJournal .column-header .label{
+    -fx-text-fill: derive(#2C7DA0,0%);
+    -fx-font-family: "Poppins Medium";
+    -fx-padding: 5;
+}
+
+
+.Dark-mode #TableJournal .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins Medium";
+    -fx-padding: 5;
+}
+
+.root.Dark-mode .scroll-pane {
+    -fx-background: #012A4A;
+    -fx-background-color: #012A4A;
+}
+
+
+
+
+#LogicielBox.Dark-mode,#MeterielBox.Dark-mode{
+    -fx-background-color: #012A4A;
+}
+
+#Dashboard.Dark-mode{
+    -fx-background-color: #012A4A;
+}
+
+
+#TableJournal .scroll-bar:vertical{
+    -fx-opacity: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-min-width: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+#TableJournal .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-min-width: 0;
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+
+}
+
+#bouttonajtsup{
+    -fx-background-color: derive(#2C7DA0,0%);
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-text-fill: white;
+    -fx-font-family: 'kanit Medium';
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+
+}
+
+#bouttonEffacer{
+    -fx-background-color: derive(#134A75,0%);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-family: 'Poppins Bold';
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-translate-x: 690;
+    -fx-font-size: 10;
+}
+
+
+
+#bouttonExcel{
+    -fx-background-color: derive(#134A75,0%);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-family: 'Poppins Bold';
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-translate-x: 650;
+    -fx-font-size: 10;
+    -fx-translate-y: 26.5;
+
+}
+
+
+
+#bouttonajout{
+    -fx-background-color: derive(#134A75,0%);
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-text-fill: white;
+    -fx-font-family: 'kanit Medium';
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-translate-x: 625;
+    -fx-translate-y: 51;
+}
+
+#bouttonajout .text ,#bouttonajtsup .text{
+    -fx-font-family: 'kanit Medium';
+    -fx-font-size: 17.5;
+    -fx-translate-y: -6;
+}
+
+.Dark-mode #bouttonajtsup,.Dark-mode #bouttonajout,.Dark-mode #bouttonEffacer,.Dark-mode #bouttonExcel{
+    -fx-background-color: white;
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-text-fill: derive(#012A4A,0%);
+}
+
+.Dark-mode #bouttonajtsup .text{
+    -fx-fill: derive(#134A75,0%);
+    -fx-font-family: 'kanit Medium';
+    -fx-font-size: 17.5;
+    -fx-translate-y: -6;
+}
+
+
+
+#TableJournal .corner {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+}
+
+.check-box{
+    -fx-translate-x: 38;
+    -fx-translate-y: 5;
+}
+
+.check-box .box{
+    -fx-background-color: derive(#c4e1ec,0%);
+    -fx-max-width: 5;
+    -fx-min-width: 5;
+    -fx-max-height: 5;
+    -fx-min-height: 5;
+}
+
+#imprimer{
+    -fx-font-size: 11;
+    -fx-translate-x: 15;
+    -fx-text-fill: derive(#001122,0%);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.Dark-mode #imprimer{
+    -fx-font-size: 11;
+    -fx-translate-x: 15;
+    -fx-text-fill: derive(#89C2D9,0%);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+/*end journal*/
+
+
+
+
+

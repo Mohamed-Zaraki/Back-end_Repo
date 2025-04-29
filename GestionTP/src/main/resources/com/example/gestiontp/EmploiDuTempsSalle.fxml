@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane id="EmploiDuTempsSalle" fx:id="EmploiDuTempsSalle" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontp.EmploiDuTempsSalleController">
+    <children>
+        <Hyperlink fx:id="minus" layoutX="350" layoutY="-30" onAction="#closewindow">
+            <graphic>
+                <SVGPath fx:id="minusicon" content="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+                         scaleX="0.03" scaleY="0.03" layoutX="260.0" layoutY="-240.0" stroke="#012A4A" strokeWidth="25">
+                </SVGPath>
+            </graphic>
+        </Hyperlink>
+        <Text fx:id="Edttitle" layoutX="195.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emploi Du Temps" />
+        <Label fx:id="TitleB" layoutX="260.0" layoutY="50.0" text="SALLE" textAlignment="CENTER" />
+
+        <TableView fx:id="timeTableView" editable="true"  prefWidth="300.5" prefHeight="512.25" layoutX="150" layoutY="100">
+            <columns>
+                <TableColumn fx:id="dayColumn" text="" prefWidth="95.5">
+
+                </TableColumn>
+                <TableColumn fx:id="slot1Column" text="Jour" prefWidth="200">
+                    <style>
+
+                    </style>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+
+    </children>
+</AnchorPane>

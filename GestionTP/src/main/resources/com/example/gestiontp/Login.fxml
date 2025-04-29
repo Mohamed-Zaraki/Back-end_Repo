@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="Login" fx:id="Login" stylesheets="@../../../CSS/Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontp.LoginController">
+    <children>
+        <VBox id="Loginbox" fx:id="Loginbox" alignment="CENTER" layoutX="800.0" layoutY="130.0" prefHeight="450" prefWidth="450" spacing="30.0">
+            <children>
+                <Text id="lineone" fx:id="lineone" text="CONNEXION" textAlignment="CENTER" />
+                <TextField id="username" fx:id="username" maxHeight="45" maxWidth="380" minHeight="45" minWidth="380" promptText="Nom d'utilisateur" />
+                <PasswordField id="password" fx:id="password" maxHeight="45" maxWidth="380" minHeight="45" minWidth="380" promptText="Mot de passe" />
+                <Text id="errorMessage" fx:id="errorMessage" fill="red" /> <!-- Ajout du champ pour les erreurs -->
+                <Button id="creerbutton" fx:id="creerbutton" mnemonicParsing="false" onAction="#openSignUp" text="Créer un nouveau compte" />
+                <Button id="connecterbutton" fx:id="connecterbutton" mnemonicParsing="false" onAction="#handleLogin" prefHeight="20" prefWidth="200" text="Se Connecter" />
+            </children>
+        </VBox>
+      <AnchorPane id="systembox" fx:id="systembox" layoutX="-1.0" layoutY="-2.0" prefHeight="711.0" prefWidth="410.0">
+         <children>
+              <ImageView id="LogoLogin" fx:id="Logo" fitHeight="60.0" fitWidth="60.0" layoutX="12.0" layoutY="12.0">
+                  <image>
+                      <Image url="@../../../../imagesApp/Logo.png" />
+                  </image>
+            </ImageView>
+             <Text id="systemetext" fx:id="systemetext" layoutX="-77.0" layoutY="303.0" text="SYSTEME DE &#10;GESTION DES&#10;SALLES TP" />
+            <Text id="bienvenutext" fx:id="bienvenutext" layoutX="20.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenu Dans Votre" wrappingWidth="369.989990234375" />
+             <Text id="copyrighttext" fx:id="copyrighttext" layoutX="120.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright groupe 10 USTO MB" wrappingWidth="369.989990234375" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
