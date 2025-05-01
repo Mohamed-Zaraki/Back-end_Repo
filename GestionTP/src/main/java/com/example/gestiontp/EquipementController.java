@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.TextFieldTableCell;
@@ -58,6 +59,9 @@ public class EquipementController implements Initializable {
         cpuColumn.setOnEditCommit(event -> event.getRowValue().setCpu(event.getNewValue()));
 
         codeColumn.setOnEditCommit(event -> {
+            if(event.getSource() == codeColumn) {
+
+            }
             Equipement equipement = event.getRowValue();
             equipement.setCode(event.getNewValue());
             insertEquipement(equipement);
@@ -93,7 +97,7 @@ public class EquipementController implements Initializable {
             updateEquipement(equipement);
         });
         // Add initial empty rows
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 20; i++) {
             equipementList.add(new Equipement());
         }
 
@@ -155,36 +159,74 @@ public class EquipementController implements Initializable {
         }
 
         public  void insertEquipement(Equipement equipement) {
+
+            if (equipement.codeProperty().get().isEmpty() ||
+                    equipement.marqueProperty().get().isEmpty() ||
+                    equipement.ramProperty().get().isEmpty() ||
+                    equipement.seProperty().get().isEmpty() ||
+                    equipement.disqueProperty().get().isEmpty() ||
+                    equipement.cpuProperty().get().isEmpty() ||
+                    equipement.salleIdProperty().get().isEmpty()) {
+
+                System.out.println("⚠️ All fields are required.");
+                return; // Stop the insert
+            }
+
             try {
                 Connection conn = Database.connectDB();
-                String sql = "INSERT INTO ordinateur (Code_pc, Marque, Ram, Type_SE, Disque_Dur, Processeur, Nom_Salle) VALUES (?, ?, ?, ?, ?, ?, ?)";
-                PreparedStatement stmt = conn.prepareStatement(sql);
-                stmt.setString(1, equipement.codeProperty().get());
-                stmt.setString(2, equipement.marqueProperty().get());
-                stmt.setString(3, equipement.ramProperty().get());
-                stmt.setString(4, equipement.seProperty().get());
-                stmt.setString(5, equipement.disqueProperty().get());
-                stmt.setString(6, equipement.cpuProperty().get());
-                stmt.setString(7, equipement.salleIdProperty().get());
-                stmt.executeUpdate();
+
+                    String sql = "INSERT INTO ordinateur (Code_pc, Marque, Ram, Type_SE, Disque_Dur, Processeur, Nom_Salle) VALUES (?, ?, ?, ?, ?, ?, ?)";
+                    PreparedStatement stmt = conn.prepareStatement(sql);
+                    stmt.setString(1, equipement.codeProperty().get());
+                    stmt.setString(2, equipement.marqueProperty().get());
+                    stmt.setString(3, equipement.ramProperty().get());
+                    stmt.setString(4, equipement.seProperty().get());
+                    stmt.setString(5, equipement.disqueProperty().get());
+                    stmt.setString(6, equipement.cpuProperty().get());
+                    stmt.setString(7, equipement.salleIdProperty().get());
+
+                    stmt.executeUpdate();
+
+
+                    String SQL = "UPDATE Salle_Tp SET Nombre_Poste = Nombre_Poste + 1 WHERE Nom_Salle = ?";
+                    PreparedStatement Update = conn.prepareStatement(SQL);
+                    Update.setString(1, equipement.salleIdProperty().get());
+
+                    Update.executeUpdate();
+
                 conn.close();
+
+
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+
         }
 
-        public static void deleteEquipement(String code) {
+        public  void deleteEquipement(String code) {
             try {
                 Connection conn = Database.connectDB();
                 String sql = "DELETE FROM ordinateur WHERE Code_pc = ?";
                 PreparedStatement stmt = conn.prepareStatement(sql);
                 stmt.setString(1, code);
                 stmt.executeUpdate();
+
+                String sql1 = "UPDATE Salle_Tp SET Nombre_Poste = Nombre_Poste -1  WHERE Nom_Salle = ?";
+                PreparedStatement Update = conn.prepareStatement(sql1);
+                Update.setString(1, PageAcceuilController.NameSalle);
+                Update.executeUpdate();
+
                 conn.close();
+
+
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
+    private void autoRefreshTable(String salle , Label posts) {
+        loadEquipements(salle);
+        posts.setText(String.valueOf(equipementList.size()));
+    }
 
         public static void updateEquipement(Equipement equipement) {
             try {

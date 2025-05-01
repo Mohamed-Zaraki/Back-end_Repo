@@ -527,6 +527,18 @@
     -fx-faint-focus-color: transparent;
 }
 
+#capacitegrp{
+    -fx-translate-y: -10;
+}
+
+#occupegrp{
+    -fx-translate-y: -10;
+}
+
+#logicielsgrp{
+    -fx-translate-y: -10;
+}
+
 #Reservepartitle{
     -fx-font-family: 'Poppins Medium';
     -fx-font-weight: bold;
@@ -551,6 +563,12 @@
 
 
 #Nbrposts,#Nbrtables,#Nbrtotal{
+    -fx-font-family: 'Montserrat Bold';
+    -fx-fill: #134A75 ;
+    -fx-font-size: 16;
+}
+
+#internettxt{
     -fx-font-family: 'Montserrat Bold';
     -fx-fill: #134A75 ;
     -fx-font-size: 16;
@@ -594,8 +612,14 @@
 
 #Grp,#Prof,#Sect,#Mod{
     -fx-font-family: 'Montserrat Bold';
-    -fx-fill: #134A75;
+    -fx-fill: derive(#134A75,0%);
     -fx-font-size: 16;
+}
+
+#Label{
+    -fx-text-fill: derive(#001122,0%);
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 9;
 }
 
 .root.Dark-mode #Grp,
@@ -1000,7 +1024,7 @@
     -fx-background-color:#f8f9fa;  /* Changed from #FFFFFF to match dark theme */
 }
 
-#filtrjour,#filtrheure,#filtrcaract,#filtrdate{
+#filtrjour,#filtrheure,#filtrcaract,#filtrdate,#filtrinternet{
     -fx-fill: derive(#012,0%);
     -fx-font-family: 'Poppins Bold';
     -fx-font-size: 20;
@@ -2295,6 +2319,16 @@
 
 .check-box .box{
     -fx-background-color: derive(#c4e1ec,0%);
+    -fx-max-width: 5;
+    -fx-min-width: 5;
+    -fx-max-height: 5;
+    -fx-min-height: 5;
+}
+
+#check .box{
+    -fx-background-color: derive(#C3CED3,0%);
+    -fx-translate-x: -310;
+    -fx-translate-y: 23;
     -fx-max-width: 5;
     -fx-min-width: 5;
     -fx-max-height: 5;

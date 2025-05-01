@@ -81,13 +81,13 @@ static  String NameSalle ;
 
 
     @FXML
-    public void initialize() {
+    public void initialize() throws SQLException {
         CodeCouleur(null);
 
     }
 
     @FXML
-    private void CodeCouleur(ActionEvent event) {
+    private void CodeCouleur(ActionEvent event) throws SQLException {
         Map<String, StackPane> boxMap = new HashMap<>();
         boxMap.putAll(Map.of(
                 "A21", A21Box, "A22", A22Box, "A23", A23Box, "A24", A24Box, "A25", A25Box,
@@ -107,13 +107,71 @@ static  String NameSalle ;
         ));
 
         for (String roomName : boxMap.keySet()) {
-            if (isRoomOccupied(roomName)) {
+            if (isRoomOccupied(roomName) ) {
                 boxMap.get(roomName).setStyle("-fx-background-color: #f6cacc; -fx-border-color: white");
                 linkMap.get(roomName).setStyle("-fx-text-fill: #bd1f21;");
             } else {
                 boxMap.get(roomName).setStyle("-fx-background-color: #bee6ce; -fx-border-color: white");
                 linkMap.get(roomName).setStyle("-fx-text-fill: #399e5a;");
             }
+        }
+        String SQL = "SELECT  DISTINCT Nom_Salle from Subit INNER JOIN Panne ON Subit.id_Panne = Panne.id_Panne";
+
+        try(Connection Connect = Database.connectDB();
+        PreparedStatement Pannes = Connect.prepareStatement(SQL);)
+        {
+            ResultSet rs = Pannes.executeQuery();
+            for (int i = 0; i < boxMap.size(); i++) {
+            if(rs.next()) {
+
+
+                    switch (rs.getString("Nom_Salle")) {
+                        case "A21":
+                            panne(exclamation21);
+                            break;
+                        case "A22":
+                            panne(exclamation22);
+                            break;
+                        case "A23":
+                            panne(exclamation23);
+                            break;
+                        case "A24":
+                            panne(exclamation24);
+                            break;
+                        case "A25":
+                            panne(exclamation25);
+                            break;
+                        case "A31":
+                            panne(exclamation31);
+                            break;
+                        case "A32":
+                            panne(exclamation32);
+                            break;
+                        case "A33":
+                            panne(exclamation33);
+                            break;
+                        case "A34":
+                            panne(exclamation34);
+                            break;
+                        case "UNIX":
+                            panne(exclamationUnix);
+                            break;
+                        case "A41":
+                            panne(exclamation41);
+                            break;
+                        case "A42":
+                            panne(exclamation42);
+                            break;
+                        case "A43":
+                            panne(exclamation43);
+                    }
+                }
+            }
+
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
         }
     }
 
@@ -132,27 +190,40 @@ static  String NameSalle ;
                 occupied = rs.getInt(1) > 0;
             }
         } catch (SQLException e) {
+            System.err.println("SQL Error: " + e.getMessage());
             e.printStackTrace();
+
+
         }
 
         return occupied;
     }
+//    private boolean isRoomReserved(String roomName) {
+//        boolean reserved = false;
+//        String SQL = "SELECT COUNT(id_réservation) FROM est_réserver JOIN réservation ON est_réserver.id_réservation =réservation.id_réservation" +
+//                " WHERE Nom_Salle = ? AND jour = ? AND  CURRENT_TIME BETWEEN heure_debut AND heure_fin  AND réservation.Nom_Enseignant IS NOT NULL";
+//        try( Connection conn = Database.connectDB();
+//                PreparedStatement st = conn.prepareStatement(SQL)) {
+//            st.setString(1, roomName);
+//            ResultSet rs = st.executeQuery();
+//            if (rs.next()) {
+//                reserved = rs.getInt(1) > 0;
+//
+//            }
+//
+//        }
+//        catch (SQLException e)
+//        {
+//            System.err.println("SQL Error: " + e.getMessage());
+//            e.printStackTrace();
+//        }
+//        return reserved;
+//
+//    }
 
     @FXML
-    private void panne() {
-        exclamation21.setVisible(true);
-        exclamation22.setVisible(true);
-        exclamation23.setVisible(true);
-        exclamation24.setVisible(true);
-        exclamation25.setVisible(true);
-        exclamation31.setVisible(true);
-        exclamation32.setVisible(true);
-        exclamation33.setVisible(true);
-        exclamation34.setVisible(true);
-        exclamation41.setVisible(true);
-        exclamation42.setVisible(true);
-        exclamation43.setVisible(true);
-        exclamationUnix.setVisible(true);
+    private void panne(Text exclamation ) {
+        exclamation.setVisible(true);
     }
 
     @FXML
@@ -162,7 +233,7 @@ static  String NameSalle ;
 
         // Open the popup and get the stage reference
         Stage popupStage = Main.openPopupWindow("/com/example/gestiontp/CaracteristiquesSalle.fxml",
-                "Details", 500, 600);
+                "Details", 500, 680);
         popupStage.setX(100);
         popupStage.setY(40);
 

@@ -51,7 +51,7 @@ public class CaracteristiquesSalleController {
     private Button logiciel10button;// Added button
     @FXML private Label TitleA;
     @FXML private Label total;
-    @FXML private Label posts;
+    @FXML private  Label posts;
     @FXML private Label groupe;
     @FXML private Label professeur;
     @FXML private Label module;
@@ -187,6 +187,9 @@ ResultSet logiRs = logiStmt.executeQuery();
                 System.err.println("SQL Error: " + e.getMessage());
                 e.printStackTrace();
             }
+
+
+
         }
 
 
@@ -258,7 +261,7 @@ ResultSet logiRs = logiStmt.executeQuery();
 
     @FXML
     private void openEquipement(ActionEvent actionEvent) throws IOException {
-        Stage popupStage=Main.openPopupWindow("EquipementSalle.fxml","Caracteristiques",600,640);
+        Stage popupStage=Main.openPopupWindow("EquipementSalle.fxml","Caracteristiques",640,640);
         popupStage.setX(650);
         popupStage.setY(20);
 
@@ -271,7 +274,7 @@ ResultSet logiRs = logiStmt.executeQuery();
 
     @FXML
     private void openReservePar(ActionEvent actionEvent) throws IOException {
-        Stage popupStage = Main.openPopupWindow2("ReservePar.fxml", "Caracteristiques", 400, 350);
+        Stage popupStage=Main.openPopupWindow2("ReservePar.fxml","Caracteristiques",400,350);
         popupStage.setX(650);
         popupStage.setY(50);
 
@@ -299,5 +302,11 @@ ResultSet logiRs = logiStmt.executeQuery();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+
+    }
+    public   Label  Getposts()
+    {
+        return this.posts ;
     }
 }

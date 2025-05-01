@@ -7,6 +7,7 @@ public class FiltrageCaracteristiques {
     private final StringProperty ram;
     private final StringProperty logiciels;
     private final StringProperty capaciteSalle;
+    private final StringProperty se;
     private final StringProperty autre1;
     private final StringProperty autre2;
 
@@ -14,6 +15,7 @@ public class FiltrageCaracteristiques {
         this.ram = new SimpleStringProperty(ram);
         this.logiciels = new SimpleStringProperty(logiciels);
         this.capaciteSalle = new SimpleStringProperty(capaciteSalle);
+        this.se = new SimpleStringProperty(autre1);
         this.autre1 = new SimpleStringProperty(autre1);
         this.autre2 = new SimpleStringProperty(autre2);
     }
@@ -29,4 +31,7 @@ public class FiltrageCaracteristiques {
     public String getCapaciteSalle() { return capaciteSalle.get(); }
     public void setCapaciteSalle(String value) { capaciteSalle.set(value); }
     public StringProperty capaciteSalleProperty() { return capaciteSalle; }
+
+    public String getSe() { return se.get(); }
+    public void setSe(String value) { se.set(value); }
 }

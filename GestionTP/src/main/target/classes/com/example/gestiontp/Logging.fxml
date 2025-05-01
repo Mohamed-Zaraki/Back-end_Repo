@@ -4,18 +4,18 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
 
 <AnchorPane id="Dashboard" fx:id="Dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontp.LoggingController">
     <children>
@@ -26,7 +26,7 @@
                         <Image url="@../../../../imagesApp/Logo.png" />
                     </image></ImageView>
                 <Button fx:id="Filtrer" layoutX="39.0" layoutY="65.0" onAction="#openfiltrage" prefHeight="25.0" prefWidth="140.0" text="Filtrer ..." />
-                <VBox id="Menulist" fx:id="Menulist" alignment="CENTER" layoutX="3.0" layoutY="117.0" prefHeight="139.0" prefWidth="161.0" spacing="25">
+                <VBox id="Menulist" fx:id="Menulist" alignment="CENTER" layoutX="3.0" layoutY="117.0" prefHeight="139.0" prefWidth="161.0" spacing="35">
                     <!-- Emploi du temps -->
                     <HBox id="Acceuil" fx:id="Acceuil" spacing="10">
                         <SVGPath fx:id="acceuilsicon" content="m7 32c-3.3137085 0-6-2.6862915-6-6v-11.958697c0-1.9117507.91103155-3.7090683 2.45293825-4.83925157l9.00556155-6.60087271c2.1153042-1.54827155 4.9847775-1.54760604 7.0963644.00164338l8.9944388 6.59915643c1.5405939 1.13031777 2.4506973 2.92683637 2.4506973 4.83760787v11.9604433c0 3.3137085-2.6862915 6-6 6zm6.8273226-27.91451343-.1864692.15877621-9.00556154 6.60087272c-.96747105.7091344-1.56238342 1.8152399-1.62902546 3.0021526l-.0062667.2240449v11.958697c0 2.1421954 1.68396847 3.8910789 3.80035966 3.9951047l.19964034.0048953 4-.0005697v-4.9994303c0-2.7614237 2.2385763-5 5-5s5 2.2385763 5 5v4.9994303l4 .0005697c2.1421954 0 3.8910789-1.6839685 3.9951047-3.8003597l.0048953-.1996403v-11.9604433c0-1.1989154-.5374544-2.3303598-1.456953-3.0875579l-.1768452-.137514-8.9944388-6.59915644c-1.3465192-.98792716-3.1571455-1.03158627-4.5444404-.15987179zm2.1726774 17.91451343c-1.5976809 0-2.9036609 1.24892-2.9949073 2.8237272l-.0050927.1762728v5h6v-5c0-1.5976809-1.24892-2.9036609-2.8237272-2.9949073z" scaleX="0.5" scaleY="0.5">
@@ -59,16 +59,18 @@
                     <HBox id="Logging" fx:id="Logging" layoutX="10.0" layoutY="30.0" spacing="10">
                         <children>
                             <SVGPath fx:id="journalIcon" content="m17.0058746 2c.5522848 0 1 .44771525 1 1 0 .51583584-.3860402.93550716-.8833788.99327227l-.1166215.00672773h-10.0058746c-1.59768088 0-2.90366088 1.24891996-2.99490731 2.82372721l-.00509269.17627279v18c0 1.5976809 1.24891996 2.9036609 2.82372721 2.9949073l.17627279.0050927h18c1.5976809 0 2.9036609-1.24892 2.9949073-2.8237272l.0050927-.1762728v-9.9962769c0-.5522847.4477153-1 1-1 .5158358 0 .9355072.3860402.9932723.8833789l.0067277.1166211v9.9962769c0 2.6887547-2.1523067 4.8818181-4.7831104 4.9953805l-.2168896.0046195h-18c-2.6887547 0-4.88181811-2.1523067-4.99538049-4.7831104l-.00461951-.2168896v-18c0-2.6887547 2.15230671-4.88181811 4.78311038-4.99538049l.21688962-.00461951zm11.6814522 1.99910108c1.1715728 1.17157287 1.1715728 3.07106781 0 4.24264069l-9.6830326 9.68303263c-.5243715.5243714-1.1588178.9255367-1.8573747 1.1744323l-3.6013076 1.2831446c-.5202485.1853643-1.0922608-.0861159-1.2776251-.6063614-.0795311-.2232142-.0772135-.4674177.0065399-.6890821l1.4674833-3.8838907c.2006363-.5310108.5119964-1.0132364.9133862-1.4146261l9.7892899-9.78928992c1.1715729-1.17157288 3.0710678-1.17157288 4.2426407 0zm-2.7415063 1.3365072-.0872209.07770636-9.7892899 9.78928996c-.1605559.1605559-.2923023.3469792-.3899415.5510651l-.0667516.1562479-.7037369 1.8639532 1.5664761-.5586506c.3492785-.1544478.6718442-.3153413.9517373-.553589l.1626875-.1510704 9.6830326-9.6830326c.3905243-.39052429.3905243-1.02368927 0-1.41421356-.3626297-.3626297-.9344751-.38853182-1.3269927-.07770636z" scaleX="0.5" scaleY="0.5" />
-                            <Hyperlink id="loggingLink" fx:id="loggingLink" onAction="#AfficherLogging" prefHeight="25.0" prefWidth="146.0" text="Logging" />
+                            <Hyperlink id="loggingLink" fx:id="loggingLink" onAction="#AfficherLogging" prefHeight="25.0" prefWidth="146.0" text="Journal" />
                         </children>
                     </HBox>
                 </VBox>
-                <VBox fx:id="MenuList2" layoutX="1.0" layoutY="397.0" prefHeight="89.0" prefWidth="145.0">
+                <VBox fx:id="MenuList2" layoutX="1.0" layoutY="445.0" prefHeight="89.0" prefWidth="145.0">
                     <children>
                         <HBox fx:id="deconnecterGroup" prefHeight="40.0" prefWidth="145.0">
                             <VBox.margin><Insets top="20.0" /></VBox.margin>
                             <children>
-                                <SVGPath fx:id="deconnectericon" content="M19 12L15 8M19 12L15 16M19 12H9" scaleX="1.2" scaleY="1.2" stroke="black" />
+                                <SVGPath fx:id="deconnectericon"
+                                         content="M19 12L15 8M19 12L15 16M19 12H9"
+                                         scaleX="1.2" scaleY="1.2" stroke="black"/>
                                 <Hyperlink id="deconnecterLink" fx:id="deconnecterLink" onAction="#Deconnecter" prefHeight="24.0" prefWidth="110.0" text="Se déconnecter">
                                     <HBox.margin><Insets left="10.0" />
                                     </HBox.margin>
@@ -96,25 +98,25 @@
         </AnchorPane>
 
         <!-- Completely revised content area using BorderPane -->
-        <BorderPane fx:id="contentPane" style="-fx-border-width: 0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <BorderPane fx:id="contentPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" style="-fx-border-width: 0">
             <center>
-                <ScrollPane fx:id="mainScrollPane" fitToWidth="false" hbarPolicy="NEVER" pannable="true" prefViewportHeight="4000.0" prefViewportWidth="860.0" style="-fx-border-width: 0" vbarPolicy="ALWAYS">
+                <ScrollPane fx:id="mainScrollPane" fitToWidth="false" fitToHeight="false" prefHeight="1000.0" hbarPolicy="NEVER" vbarPolicy="ALWAYS" pannable="true" prefViewportHeight="4000.0" prefViewportWidth="860.0" style="-fx-border-width: 0">
                     <content>
-                        <VBox fx:id="contentVBox" minHeight="1200.0" prefWidth="840.0" spacing="30" style="-fx-border-width: 0">
+                        <VBox fx:id="contentVBox" spacing="30" prefWidth="840.0" minHeight="4000.0" style="-fx-border-width: 0">
                             <padding>
-                                <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                                <Insets top="50.0" left="50.0" right="50.0" bottom="50.0" />
                             </padding>
                             <children>
                                 <Label id="txtcolor2" prefHeight="30.0" prefWidth="150.0" text="JOURNAL" />
 
-                                <VBox fx:id="LogicielBox" prefWidth="860" spacing="5">
+                                <VBox fx:id="LogicielBox" spacing="5" prefWidth="860">
                                     <Label id="Label" maxWidth="170" minWidth="170" prefHeight="30.0" text="PANNE LOGICIEL" />
-                                    <Button id="bouttonajout" fx:id="ajouterLigneLogicielBtn" maxHeight="17" maxWidth="17" minHeight="17" minWidth="17" mnemonicParsing="false" onAction="#ajouterLigneLogiciel" text="+" />
-                                    <Button id="bouttonExcel" fx:id="bouttonExcel1" contentDisplay="CENTER" maxHeight="21" maxWidth="37" minHeight="21" minWidth="37" mnemonicParsing="false" onAction="#exporterLogicielVersExcel" text="Excel" textAlignment="CENTER" />
-                                    <Button id="bouttonEffacer" fx:id="bouttonEffacer1" contentDisplay="CENTER" maxHeight="21" maxWidth="45" minHeight="21" minWidth="45" mnemonicParsing="false" onAction="#effacerLogiciel" text="Effacer" textAlignment="CENTER" />
+                                    <Button id="bouttonajout" fx:id="ajouterLigneLogicielBtn" mnemonicParsing="false" onAction="#ajouterLigneLogiciel" minHeight="17" maxHeight="17" minWidth="17" maxWidth="17" text="+" />
+                                    <Button id="bouttonExcel" fx:id="bouttonExcel1" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ExporterExcel" minHeight="21" maxHeight="21" minWidth="37" maxWidth="37" text="Excel" textAlignment="CENTER" />
+                                    <Button id="bouttonEffacer" fx:id="bouttonEffacer1" contentDisplay="CENTER" mnemonicParsing="false" onAction="#effacerExcel" minHeight="21" maxHeight="21" minWidth="45" maxWidth="45" text="Effacer" textAlignment="CENTER" />
 
 
-                                    <TableView id="TableJournal" fx:id="tableLogiciel" maxHeight="Infinity" maxWidth="741" minWidth="741" prefHeight="300">
+                                    <TableView id="TableJournal" fx:id="tableLogiciel" minWidth="741" maxWidth="741" prefHeight="300" maxHeight="Infinity">
                                         <columns>
                                             <TableColumn id="TableJournal" fx:id="dateColumn" maxWidth="100" minWidth="100" text="Date" />
                                             <TableColumn id="TableJournal" fx:id="salleColumn" maxWidth="100" minWidth="100" text="Salle" />
@@ -128,11 +130,11 @@
 
                                 <VBox fx:id="MeterielBox" spacing="5">
                                     <Label id="Label" maxWidth="170" minWidth="170" prefHeight="30.0" text="PANNE MATERIEL" />
-                                    <Button id="bouttonajout" fx:id="ajouterLigneMaterielBtn" contentDisplay="CENTER" maxHeight="17" maxWidth="17" minHeight="17" minWidth="17" mnemonicParsing="false" onAction="#ajouterLigneMateriel" text="+" textAlignment="CENTER" />
-                                    <Button id="bouttonExcel" fx:id="bouttonExcel2" contentDisplay="CENTER" maxHeight="21" maxWidth="37" minHeight="21" minWidth="37" mnemonicParsing="false" onAction="#exporterMaterielVersExcel" text="Excel" textAlignment="CENTER" />
-                                    <Button id="bouttonEffacer" fx:id="bouttonEffacer2" contentDisplay="CENTER" maxHeight="21" maxWidth="45" minHeight="21" minWidth="45" mnemonicParsing="false" onAction="#effacerMateriel" text="Effacer" textAlignment="CENTER" />
+                                    <Button id="bouttonajout" fx:id="ajouterLigneMaterielBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ajouterLigneMateriel" minHeight="17" maxHeight="17" minWidth="17" maxWidth="17" text="+" textAlignment="CENTER" />
+                                    <Button id="bouttonExcel" fx:id="bouttonExcel2" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ExporterExcel" minHeight="21" maxHeight="21" minWidth="37" maxWidth="37" text="Excel" textAlignment="CENTER" />
+                                    <Button id="bouttonEffacer" fx:id="bouttonEffacer2" contentDisplay="CENTER" mnemonicParsing="false" onAction="#effacerExcel" minHeight="21" maxHeight="21" minWidth="45" maxWidth="45" text="Effacer" textAlignment="CENTER" />
 
-                                    <TableView id="TableJournal" fx:id="tableMateriel" maxHeight="Infinity" maxWidth="741" minWidth="741" prefHeight="300">
+                                    <TableView id="TableJournal" fx:id="tableMateriel" minWidth="741" maxWidth="741" prefHeight="300" maxHeight="Infinity">
                                         <columns>
                                             <TableColumn id="TableJournal" fx:id="dateMateriel" maxWidth="100" minWidth="100" text="Date" />
                                             <TableColumn id="TableJournal" fx:id="salleMateriel" maxWidth="100" minWidth="100" text="Salle" />
@@ -144,7 +146,7 @@
                                 </VBox>
 
                                 <!-- Adding a spacer at the bottom to ensure there's enough content to scroll -->
-                                <Region minHeight="100" VBox.vgrow="ALWAYS" />
+                                <Region VBox.vgrow="ALWAYS" minHeight="100" />
                             </children>
                         </VBox>
                     </content>

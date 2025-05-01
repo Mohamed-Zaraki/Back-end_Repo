@@ -13,7 +13,7 @@
 
     <Label text="LES SALLES DISPONIBLES" fx:id="reservertitle"/>
 
-    <FlowPane fx:id="sallesPane" hgap="10" vgap="10" />
+    <FlowPane fx:id="sallesPane" hgap="10" vgap="10" alignment="TOP_LEFT" />
 
     <TextField fx:id="nomEnseignant" promptText="Enterz Le Nom De L'enseignant" maxWidth="250" prefHeight="30"/>
 

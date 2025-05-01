@@ -9,55 +9,65 @@
 <?import javafx.scene.text.Text?>
 
 <?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.CheckBox?>
 <AnchorPane fx:id="Filtrage" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontp.FiltrageSalleController">
-    <children>
-        <!--
-              <Text fx:id="filtrjour" layoutX="52.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Selectionnez le jour" />
-        -->
-        <Text fx:id="filtrdate" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Selectionnez le date" />
-        <Text fx:id="filtrheure" layoutX="35.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Selectionnez l'heure" />
-        <Text fx:id="filtrcaract" layoutX="35.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Selectionnez les caracteristiques de la salle" />
+   <children>
+<!--
+      <Text fx:id="filtrjour" layoutX="52.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Selectionnez le jour" />
+-->
+      <Text fx:id="filtrdate" layoutX="35.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Selectionnez le date" />
+      <Text fx:id="filtrheure" layoutX="35.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Selectionnez l'heure" />
+       <Text fx:id="filtrinternet" layoutX="35.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Internet" />
+       <Text fx:id="filtrcaract" layoutX="35.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Selectionnez les caracteristiques de la salle" />
 
 
-        <HBox layoutX="280.0" layoutY="110.0" prefHeight="25.0" prefWidth="110.0">
-            <children>
-                <Text fx:id="datejour" strokeType="OUTSIDE" strokeWidth="0.0" text="Jour :" />
-                <ChoiceBox fx:id="datejourchoice" prefWidth="150.0" />
-            </children>
-        </HBox>
+      <HBox layoutX="280.0" layoutY="110.0" prefHeight="25.0" prefWidth="110.0">
+         <children>
+            <Text fx:id="datejour" strokeType="OUTSIDE" strokeWidth="0.0" text="Jour :" />
+            <ChoiceBox fx:id="datejourchoice" prefWidth="150.0" />
+         </children>
+      </HBox>
 
-        <HBox layoutX="420.0" layoutY="85.0" prefHeight="25.0" prefWidth="110.0">
-            <children>
-                <Text fx:id="datemois" strokeType="OUTSIDE" strokeWidth="0.0" text="Mois:" />
-                <ChoiceBox fx:id="datemoischoice" prefWidth="150.0" />
-            </children>
-        </HBox>
-
-
-        <HBox layoutX="280" layoutY="91.0" prefHeight="25.0" prefWidth="100.0">
-            <children>
-                <Text fx:id="heurestart" strokeType="OUTSIDE" strokeWidth="0.0" text="De :" />
-                <ChoiceBox fx:id="heurestartchoice" prefWidth="150.0" />
-            </children>
-        </HBox>
-        <HBox layoutX="420" layoutY="91.0" prefHeight="25.0" prefWidth="100.0">
-            <children>
-                <Text fx:id="heureend" strokeType="OUTSIDE" strokeWidth="0.0" text="A :" wrappingWidth="20.295562744140625" />
-                <ChoiceBox fx:id="heureendchoice" prefWidth="150.0" />
-            </children>
-        </HBox>
+      <HBox layoutX="420.0" layoutY="85.0" prefHeight="25.0" prefWidth="110.0">
+         <children>
+            <Text fx:id="datemois" strokeType="OUTSIDE" strokeWidth="0.0" text="Mois:" />
+            <ChoiceBox fx:id="datemoischoice" prefWidth="150.0" />
+         </children>
+      </HBox>
 
 
-        <TableView fx:id="filtreTable" layoutX="50.0" layoutY="210.0" prefHeight="450" >
-            <columns>
-                <TableColumn fx:id="ramColumn2" prefWidth="150.0" text="RAM" />
-                <TableColumn fx:id="logicielsColumn2" prefWidth="150.0" text="LOGICIELS" />
-                <TableColumn fx:id="capaciteColumn2" prefWidth="150.0" text="CAPACITE SALLE" styleClass="last-column" />
-            </columns>
-        </TableView>
+      <HBox layoutX="280" layoutY="91.0" prefHeight="25.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="heurestart" strokeType="OUTSIDE" strokeWidth="0.0" text="De :" />
+            <ChoiceBox fx:id="heurestartchoice" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="420" layoutY="91.0" prefHeight="25.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="heureend" strokeType="OUTSIDE" strokeWidth="0.0" text="A :" wrappingWidth="20.295562744140625" />
+            <ChoiceBox fx:id="heureendchoice" prefWidth="150.0" />
+         </children>
+      </HBox>
 
-        <Button id="confirmerfiltragebutton" fx:id="confirmerfiltragebutton" layoutX="230" layoutY="300" text="Confirmer" onAction="#ConfirmerFiltrage" />
-    </children>
+       <HBox layoutX="420" layoutY="110.0" >
+           <children>
+               <CheckBox fx:id="check" prefWidth="150.0" onAction="#CheckInternet"/>
+
+           </children>
+       </HBox>
+
+
+       <TableView fx:id="filtreTable" layoutX="35.0" layoutY="220.0" prefHeight="480" >
+           <columns>
+               <TableColumn fx:id="ramColumn2" prefWidth="120.0" text="RAM" />
+               <TableColumn fx:id="logicielsColumn2" prefWidth="120.0" text="LOGICIELS" />
+               <TableColumn fx:id="seColumn2" prefWidth= "120.0" text="SE" styleClass="last-column" />
+               <TableColumn fx:id="capaciteColumn2" prefWidth="120.0" text="CAPACITE SALLE"  />
+           </columns>
+       </TableView>
+
+       <Button id="confirmerfiltragebutton" fx:id="confirmerfiltragebutton" layoutX="230" layoutY="300" text="Confirmer" onAction="#ConfirmerFiltrage" />
+   </children>
 </AnchorPane>
 
 

@@ -300,9 +300,9 @@ public class LoggingController implements Initializable {
         PanneLogiciel newPanne = new PanneLogiciel(
                 0,                           // idPanne = 0 because it's a new one
                 LocalDate.now().toString(),   // today's date
-                "A21",                    // default salle
+                "-",                    // default salle
                 "Nouvelle panne",             // default detail
-                "1",                          // default degre
+                "-",                          // default degre
                 ""                            // maintenance
         );
 

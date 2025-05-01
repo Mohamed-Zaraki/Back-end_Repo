@@ -24,7 +24,7 @@
                         <Image url="@../../../../imagesApp/Logo.png" />
                     </image></ImageView>
                 <Button fx:id="Filtrer" layoutX="39.0" layoutY="65.0" onAction="#openfiltrage" prefHeight="25.0" prefWidth="140.0" text="Filtrer ..." />
-                <VBox id="Menulist" fx:id="Menulist" alignment="CENTER" layoutX="3.0" layoutY="117.0" prefHeight="139.0" prefWidth="161.0" spacing="25">
+                <VBox id="Menulist" fx:id="Menulist" alignment="CENTER" layoutX="3.0" layoutY="117.0" prefHeight="139.0" prefWidth="161.0" spacing="35">
                     <!-- Emploi du temps -->
                     <HBox id="Acceuil" fx:id="Acceuil" spacing="10">
                         <SVGPath fx:id="acceuilsicon" content="m7 32c-3.3137085 0-6-2.6862915-6-6v-11.958697c0-1.9117507.91103125-3.7090683 2.45293825-4.83925127l9.00556125-6.60087271c2.1123042-1.54827125 4.9847775-1.54760604 7.0963644.00164338l8.9944388 6.59912643c1.5405939 1.13031777 2.4506973 2.92683637 2.4506973 4.83760787v11.9604433c0 3.3137085-2.6862915 6-6 6zm6.8273226-27.91451343-.1864692.12877621-9.00556124 6.60087272c-.96747105.7091344-1.56238342 1.8122399-1.62902546 3.0021226l-.0062667.2240449v11.958697c0 2.1421954 1.68396847 3.8910789 3.80035966 3.9951047l.19964034.0048953 4-.0005697v-4.9994303c0-2.7614237 2.2385763-5 5-5s5 2.2385763 5 5v4.9994303l4 .0005697c2.1421954 0 3.8910789-1.6839685 3.9951047-3.8003597l.0048953-.1996403v-11.9604433c0-1.1989154-.5374544-2.3303598-1.456953-3.0875579l-.1768452-.137514-8.9944388-6.59912644c-1.3465192-.98792716-3.1571455-1.03128627-4.5444404-.12987179zm2.1726774 17.91451343c-1.5976809 0-2.9036609 1.24892-2.9949073 2.8237272l-.0050927.1762728v5h6v-5c0-1.5976809-1.24892-2.9036609-2.8237272-2.9949073z" scaleX="0.5" scaleY="0.5">
@@ -57,11 +57,11 @@
                     <HBox id="Logging" fx:id="Logging" layoutX="10.0" layoutY="30.0" spacing="10">
                         <children>
                             <SVGPath fx:id="journalIcon" content="m17.0058746 2c.5522848 0 1 .44771525 1 1 0 .51283584-.3860402.93550716-.8833788.99327227l-.1166212.00672773h-10.0058746c-1.59768088 0-2.90366088 1.24891996-2.99490731 2.82372721l-.00509269.17627279v18c0 1.5976809 1.24891996 2.9036609 2.82372721 2.9949073l.17627279.0050927h18c1.5976809 0 2.9036609-1.24892 2.9949073-2.8237272l.0050927-.1762728v-9.9962769c0-.5522847.4477153-1 1-1 .5128358 0 .9355072.3860402.9932723.8833789l.0067277.1166211v9.9962769c0 2.6887547-2.1223067 4.8818181-4.7831104 4.9953805l-.2168896.0046195h-18c-2.6887547 0-4.88181811-2.1223067-4.99538049-4.7831104l-.00461951-.2168896v-18c0-2.6887547 2.12230671-4.88181811 4.78311038-4.99538049l.21688962-.00461951zm11.6814522 1.99910108c1.1715728 1.17157287 1.1715728 3.07106781 0 4.24264069l-9.6830326 9.68303263c-.5243715.5243714-1.1588178.9255367-1.8573747 1.1744323l-3.6013076 1.2831446c-.5202485.1853643-1.0922608-.0861129-1.2776251-.6063614-.0795311-.2232142-.0772135-.4674177.0065399-.6890821l1.4674833-3.8838907c.2006363-.5310108.5119964-1.0132364.9133862-1.4146261l9.7892899-9.78928992c1.1715729-1.17157288 3.0710678-1.17157288 4.2426407 0zm-2.7412063 1.3365072-.0872209.07770636-9.7892899 9.78928996c-.1605559.1605559-.2923023.3469792-.3899415.5510651l-.0667516.1562479-.7037369 1.8639532 1.5664761-.5586506c.3492785-.1244478.6718442-.3123413.9517373-.553589l.1626875-.1510704 9.6830326-9.6830326c.3905243-.39052429.3905243-1.02368927 0-1.41421356-.3626297-.3626297-.9344751-.38853182-1.3269927-.07770636z" scaleX="0.5" scaleY="0.5" />
-                            <Hyperlink id="loggingLink" fx:id="loggingLink" onAction="#AfficherLogging" prefHeight="25.0" prefWidth="146.0" text="Logging" />
+                            <Hyperlink id="loggingLink" fx:id="loggingLink" onAction="#AfficherLogging" prefHeight="25.0" prefWidth="146.0" text="Journal" />
                         </children>
                     </HBox>
                 </VBox>
-                <VBox fx:id="MenuList2" layoutX="1.0" layoutY="397.0" prefHeight="89.0" prefWidth="145.0">
+                <VBox fx:id="MenuList2" layoutX="0.8" layoutY="445.0" prefHeight="89.0" prefWidth="145.0">
                     <children>
                         <HBox fx:id="deconnecterGroup" prefHeight="40.0" prefWidth="145.0">
                             <VBox.margin><Insets top="20.0" /></VBox.margin>
@@ -100,35 +100,35 @@
                 <StackPane id="A21Box" fx:id="A21Box" maxHeight="90" minHeight="90" prefWidth="90" styleClass="salle">
                     <children>
                         <Hyperlink id="A21Link" fx:id="A21Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A21" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                  <Text visible="false" fx:id="exclamation21" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                  <Text id="exclamation" fx:id="exclamation21" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A22Box" fx:id="A22Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A22Link" fx:id="A22Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A22" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation22" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation22" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A23Box" fx:id="A23Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A23Link" fx:id="A23Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A23" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation23" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation23" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A24Box" fx:id="A24Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A24Link" fx:id="A24Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A24" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation24" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation24" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A25Box" fx:id="A25Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A25Link" fx:id="A25Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A25" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation25" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation25" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
             </children>
@@ -139,35 +139,35 @@
                 <StackPane id="A31Box" fx:id="A31Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A31Link" fx:id="A31Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A31" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation31" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation31" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A32Box" fx:id="A32Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A32Link" fx:id="A32Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A32" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation32" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation32" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A33Box" fx:id="A33Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A33Link" fx:id="A33Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A33" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation33" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation33" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A34Box" fx:id="A34Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A34Link" fx:id="A34Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A34" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation34" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation34" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="UnixBox" fx:id="UnixBox" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="UnixLink" fx:id="UnixLink" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;UNIX" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamationUnix" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamationUnix" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
             </children>
@@ -178,21 +178,21 @@
                 <StackPane id="A41Box" fx:id="A41Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A41Link" fx:id="A41Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A41" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation41" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation41" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A42Box" fx:id="A42Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A42Link" fx:id="A42Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A42" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation42" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation42" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
                 <StackPane id="A43Box" fx:id="A43Box" maxHeight="90" minHeight="90" prefWidth="90.0" styleClass="salle">
                     <children>
                         <Hyperlink id="A43Link" fx:id="A43Link" onAction="#ouvrirSalle" prefHeight="61.0" prefWidth="70.0" styleClass="hyperlinktxt" text="SALLE&#10;A43" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                        <Text visible="false" fx:id="exclamation43" id="exclamation" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="1.0" />
+                        <Text id="exclamation" fx:id="exclamation43" strokeType="OUTSIDE" strokeWidth="0.0" text="!" visible="false" wrappingWidth="1.0" />
                     </children>
                 </StackPane>
 
